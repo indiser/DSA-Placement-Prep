@@ -1,12 +1,34 @@
 # DSA for Placements
 
+> ⚠️ **WORK IN PROGRESS** - This repository is actively under development. Content, structure, and solutions are being continuously added and refined. Not all topics are complete yet.
+
 A comprehensive collection of Data Structures and Algorithms solutions curated for interview preparation and competitive programming. This repository contains implementations of classic DSA problems organized by topic and difficulty level, aligned with the Apna College DSA series.
 
-## 📚 Topics Covered
+## 🚧 Current Status
+
+| Topic | Status | Progress |
+|-------|--------|----------|
+| Arrays | ✅ In Progress | 16/25 problems |
+| Binary Search | ✅ In Progress | 7/7 problems |
+| Strings | ✅ In Progress | 7/11 problems |
+| Linked Lists | ✅ In Progress | 6/13 problems |
+| Recursion & Backtracking | ✅ In Progress | 11/11 problems |
+| Binary Trees | 🔄 Not Started | 0/24 problems |
+| BST | 🔄 Not Started | 0/15 problems |
+| Stacks & Queues | 🔄 Not Started | 0/15 problems |
+| Graphs | 🔄 Not Started | 0/26 problems |
+| Dynamic Programming | 🔄 Not Started | 0/21 problems |
+| Greedy | 🔄 Not Started | 0/6 problems |
+| Heaps | 🔄 Not Started | 0/6 problems |
+| Tries | 🔄 Not Started | 0/5 problems |
+
+**Overall Progress:** ~47/150 problems (31%)
+
+## 📚 Topics Covered (Planned)
 
 ### Core Data Structures
 - **Arrays** (25 problems) - Easy, Medium, Hard
-- **Linked Lists** (7 problems) - Easy, Medium
+- **Linked Lists** (13 problems) - Easy, Medium, Hard
 - **Binary Trees** (24 problems)
 - **Binary Search Trees** (15 problems)
 - **Stacks & Queues** (15 problems)
@@ -26,80 +48,78 @@ A comprehensive collection of Data Structures and Algorithms solutions curated f
 ```
 Apna College DSA/
 ├── Arrays/
-│   ├── Easy/          (5 problems)
-│   ├── Medium/        (11 problems)
-│   └── Hard/          (4 problems)
+│   ├── Easy/          (5/5 problems) ✅
+│   ├── Medium/        (11/11 problems) ✅
+│   └── Hard/          (4/9 problems) 🔄
 ├── Binary Search/
-│   ├── Medium/        (6 problems)
-│   └── Hard/          (1 problem)
-├── Binary Trees/
-├── BST/
-├── DP/
-├── Graph/
-├── Greedy/
-├── Linked List/
-│   ├── Easy/          (5 problems)
-│   ├── Medium/        (1 problem)
-│   └── Hard/
-├── Recursion_And_Backtracing/
-│   ├── Medium/        (8 problems)
-│   └── Hard/          (3 problems)
-├── Stack_And_Queue/
+│   ├── Medium/        (6/6 problems) ✅
+│   └── Hard/          (1/1 problem) ✅
 ├── Strings/
-│   ├── Easy/          (3 problems)
-│   ├── Medium/        (3 problems)
-│   └── Hard/          (1 problem)
-├── Trie/
+│   ├── Easy/          (3/3 problems) ✅
+│   ├── Medium/        (3/5 problems) 🔄
+│   └── Hard/          (1/3 problems) 🔄
+├── Linked List/
+│   ├── Easy/          (5/5 problems) ✅
+│   ├── Medium/        (1/5 problems) 🔄
+│   └── Hard/          (0/3 problems) 🔄
+├── Recursion_And_Backtracing/
+│   ├── Medium/        (8/8 problems) ✅
+│   └── Hard/          (3/3 problems) ✅
+├── Binary Trees/      (0/24 problems) 🔄
+├── BST/               (0/15 problems) 🔄
+├── Stack_And_Queue/   (0/15 problems) 🔄
+├── Graph/             (0/26 problems) 🔄
+├── DP/                (0/21 problems) 🔄
+├── Greedy/            (0/6 problems) 🔄
+├── Heaps/             (0/6 problems) 🔄
+├── Trie/              (0/5 problems) 🔄
 ├── DSA for PLACEMENTS.csv
 ├── DSA for PLACEMENTS.xlsx
 └── README.md
 ```
 
-## 🎯 Problem Categories
+## 🎯 Completed Problem Categories
 
-### Arrays (25 Problems)
-**Easy:** Majority Element, Repeat & Missing Number, Merge Sorted Arrays, Single Number, Stock Buy & Sell
+### Arrays (16/25 Problems)
+**Easy (5/5):** ✅ Majority Element, Repeat & Missing Number, Merge Sorted Arrays, Single Number, Stock Buy & Sell
 
-**Medium:** Kadane's Algorithm, Pow(x,n), Container with Most Water, Sort Colors, 3Sum, 4Sum, Search 2D Matrix, Next Permutation, Merge Intervals, Set Matrix Zeroes, Word Search, Product of Array Except Self, Subarray Sum Equals K, Find Duplicate
+**Medium (11/11):** ✅ Kadane's Algorithm, Pow(x,n), Container with Most Water, Sort Colors, 3Sum, 4Sum, Search 2D Matrix, Next Permutation, Merge Intervals, Set Matrix Zeroes, Word Search
 
-**Hard:** Count Inversions, Trapping Rainwater, Sliding Window Maximum, Reverse Pairs, Largest Rectangle in Histogram
+**Hard (0/9):** 🔄 Count Inversions, Trapping Rainwater, Sliding Window Maximum, Reverse Pairs, Largest Rectangle in Histogram, and more
 
-### Binary Search (7 Problems)
+### Binary Search (7/7 Problems) ✅
 **Medium:** Search in Rotated Sorted Array, Peak Index in Mountain Array, Single Element in Sorted Array, Book Allocation, Painter's Partition, Aggressive Cows
 
 **Hard:** Median of 2 Sorted Arrays
 
-### Strings (11 Problems)
-**Easy:** Valid Palindrome, Longest Common Prefix, Valid Anagram
+### Strings (7/11 Problems)
+**Easy (3/3):** ✅ Valid Palindrome, Longest Common Prefix, Valid Anagram
 
-**Medium:** Reverse Words in String, Remove All Occurrences, Permutation in String, String Compression, Group Anagrams
+**Medium (3/5):** ✅ Reverse Words in String, Remove All Occurrences, Permutation in String
 
-**Hard:** Minimum Window Substring, KMP Algorithm, Rabin-Karp Algorithm
+**Hard (1/3):** 🔄 Minimum Window Substring, KMP Algorithm, Rabin-Karp Algorithm
 
-### Linked Lists (7 Problems)
-**Easy:** Reverse LL, Middle of LL, Merge 2 Sorted LL, Check Palindrome, Detect Cycle
+### Linked Lists (6/13 Problems)
+**Easy (5/5):** ✅ Reverse LL, Middle of LL, Merge 2 Sorted LL, Check Palindrome, Detect Cycle
 
-**Medium:** Remove Cycle, Flatten LL
+**Medium (1/5):** 🔄 Flatten LL, Remove Cycle, Clone LL, Add 2 Numbers, LRU Cache
 
-### Recursion & Backtracking (11 Problems)
+**Hard (0/3):** 🔄 Reverse Nodes in K Groups, and more
+
+### Recursion & Backtracking (11/11 Problems) ✅
 **Medium:** Combination Sum I & II, Palindrome Partitioning, Knight's Tour, M-Coloring, Rat in Maze, Subsets II, Merge Sort
 
 **Hard:** N-Queens, Sudoku Solver, Count Inversions
 
-### Binary Trees (24 Problems)
-Traversals (Inorder, Preorder, Postorder), Symmetric Tree, Diameter, Height Balanced, LCA, Top/Bottom View, Level Order, Flatten to LL, Max Path Sum, and more
-
-### BST (15 Problems)
-Kth Largest/Smallest, Validate BST, LCA, Inorder Successor/Predecessor, Serialize & Deserialize, and more
-
-### Graphs (26 Problems)
-BFS, DFS, Cycle Detection, Topological Sort, MST (Prim's, Kruskal's), Dijkstra's, Floyd-Warshall, Strongly Connected Components, Bipartite Check, Number of Islands, and more
-
-### Dynamic Programming (21 Problems)
-0-1 Knapsack, Coin Change, LCS, Edit Distance, LIS, MCM, Egg Dropping, Rod Cutting, and more
-
-### Greedy (6 Problems)
-Assign Cookies, Indian Coins, Fractional Knapsack, Activity Selection, Job Scheduling
+### Planned Topics (Not Started)
+- **Binary Trees** (24 problems)
+- **BST** (15 problems)
+- **Graphs** (26 problems)
+- **Dynamic Programming** (21 problems)
+- **Greedy** (6 problems)
+- **Heaps** (6 problems)
+- **Tries** (5 problems)
+- **Stacks & Queues** (15 problems)
 
 ## 🛠️ Tech Stack
 
@@ -126,7 +146,7 @@ g++ -o solution BuyAndSellStock.cpp
 ./solution
 ```
 
-## 📊 Placement Statistics
+## 📊 Placement Statistics (Reference)
 
 This collection is based on the **DSA for Placements** curriculum, tracking problems asked by top companies including:
 
@@ -135,29 +155,25 @@ This collection is based on the **DSA for Placements** curriculum, tracking prob
 - **Tech Giants:** Adobe, Oracle, Uber, Salesforce, Flipkart
 - **Startups:** Swiggy, Ola, Paytm, Zepto, PhonePe
 
-Each problem is tagged with:
-- Difficulty level (Easy, Medium, Hard)
-- Companies that have asked it
-- Prerequisites and related concepts
-- Video solutions (where available)
+**Note:** Company tags and problem frequencies are based on the DSA for PLACEMENTS.csv file and may be updated as more solutions are added.
 
-## 📈 Learning Path
+## 📈 Learning Path (Recommended)
 
-### Beginner
+### Beginner (Start Here)
 1. Arrays (Easy)
 2. Strings (Easy)
 3. Linked Lists (Easy)
 4. Recursion basics
 
-### Intermediate
+### Intermediate (In Progress)
 1. Binary Search
 2. Sorting & Hashing
-3. Recursion & Backtracking
-4. Stacks & Queues
-5. Trees (Binary Trees, BST)
+3. Recursion & Backtracking ✅
+4. Stacks & Queues (Coming Soon)
+5. Trees (Coming Soon)
 
-### Advanced
-1. Graphs (BFS, DFS, Shortest Path)
+### Advanced (Coming Soon)
+1. Graphs
 2. Dynamic Programming
 3. Greedy Algorithms
 4. Advanced Tree Problems
@@ -194,9 +210,9 @@ int main() {
 
 ## 📊 Progress Tracking
 
-Use the provided Excel/CSV files to track your progress:
-- **DSA for PLACEMENTS.xlsx** - Interactive progress tracker
-- **DSA for PLACEMENTS.csv** - Problem list with company tags and difficulty
+Use the provided files to track progress:
+- **DSA for PLACEMENTS.xlsx** - Interactive progress tracker (will be updated as solutions are added)
+- **DSA for PLACEMENTS.csv** - Complete problem list with company tags and difficulty
 
 ## 🎓 Resources
 
@@ -214,17 +230,18 @@ Use the provided Excel/CSV files to track your progress:
 6. **Focus on patterns** - Recognize similar problem types
 7. **Mock interviews** - Practice explaining solutions verbally
 
+## 🤝 Contributing
+
+This is an active learning project. Contributions are welcome:
+- Add missing solutions
+- Optimize existing implementations
+- Add more test cases
+- Improve documentation
+- Fix bugs or typos
+
 ## 📄 License
 
 This repository is for educational purposes. Problems are sourced from LeetCode, GeeksforGeeks, and other competitive programming platforms.
-
-## 🤝 Contributing
-
-Feel free to:
-- Add optimized solutions
-- Improve existing implementations
-- Add more test cases
-- Fix bugs or improve documentation
 
 ## 📞 Support
 
@@ -236,8 +253,10 @@ For questions or clarifications:
 ---
 
 - **Last Updated:** 2026
-- **Total Problems:** 150+
-- **Topics:** 15+
+- **Total Problems (Completed):** ~47/150 (31%)
+- **Topics (In Progress):** 13
 - **Difficulty Levels:** Easy, Medium, Hard
+
+**Disclaimer:** This repository is a work in progress and is being continuously updated. Solutions and content may change as the project develops. Use at your own discretion for learning purposes.
 
 Happy Coding! 🚀
