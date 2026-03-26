@@ -235,9 +235,9 @@ For questions or clarifications:
 
 ---
 
-**Last Updated:** 2026
-**Total Problems:** 150+
-**Topics:** 15+
-**Difficulty Levels:** Easy, Medium, Hard
+- **Last Updated:** 2026
+- **Total Problems:** 150+
+- **Topics:** 15+
+- **Difficulty Levels:** Easy, Medium, Hard
 
 Happy Coding! 🚀
