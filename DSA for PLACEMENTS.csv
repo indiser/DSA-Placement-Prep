@@ -89,7 +89,7 @@ STACK & QUEUE,TRUE,1,Implement Stack using Queue,Problem Link,Easy,Solution Link
 ,TRUE,5,1st Non Repeating in Stream,Problem Link,Easy,Solution Link,"amazon, goldman sach, google, apple, meta , microsoft, walmart labs, adobe, TCS ",
 ,TRUE,6,Reverse 1st K Elements of Queue,Problem Link,Easy,,"Microsoft , amdocs, amazon ",
 ,TRUE,7,Time needed to Buy Tickets ,Problem Link,Easy,,"uber, amazon, microsoft, google, ,meta",
-,FALSE,8,Next Greater Element II,Problem Link,Medium,Solution Link,"amazon, uber",
+,TRUE,8,Next Greater Element II,Problem Link,Medium,Solution Link,"amazon, uber",
 ,FALSE,9,Previous Smaller Element,Problem Link,Medium,Solution Link,"amazon, meta , microsoft, apple, visa , oracle, intuit, citadel, samsung, paypal , ebay ",
 ,FALSE,10,Celebrity Problem ,Problem Link,Medium,Solution Link,"linkedin, meta, microsoft, amazon, uber, salesforce, phonepe",
 ,FALSE,11,Get Min Element from Stack,Problem Link,Medium,Solution Link,"Google, meta, amazon, saleforce, intuit , paypal, adobe, salesforce, Nike ",
