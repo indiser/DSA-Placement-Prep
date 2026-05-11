@@ -93,7 +93,7 @@ STACK & QUEUE,TRUE,1,Implement Stack using Queue,Problem Link,Easy,Solution Link
 ,TRUE,9,Previous Smaller Element,Problem Link,Medium,Solution Link,"amazon, meta , microsoft, apple, visa , oracle, intuit, citadel, samsung, paypal , ebay ",
 ,TRUE,10,Celebrity Problem ,Problem Link,Medium,Solution Link,"linkedin, meta, microsoft, amazon, uber, salesforce, phonepe",
 ,TRUE,11,Get Min Element from Stack,Problem Link,Medium,Solution Link,"Google, meta, amazon, saleforce, intuit , paypal, adobe, salesforce, Nike ",
-,FALSE,12,Circular Tour / Gas Station,Problem Link,Medium,Solution Link,"amazon, microsoft, goldman sachs, intuit ,IBM ",
+,TRUE,12,Circular Tour / Gas Station,Problem Link,Medium,Solution Link,"amazon, microsoft, goldman sachs, intuit ,IBM ",
 ,FALSE,13,Rotten Oranges,Problem Link,Medium,,"amazon, google, microsoft, meta, oracle, adobe, cisco, Infosys , Salesforce ,BNY Mellon",
 ,FALSE,14,Stock Span,Problem Link,Medium,Solution Link,"Amazon , google, Microsoft, Oracle, Samsung , Meta , Intuit , Phonepe, zepto , Flipkart ",
 ,FALSE,15,Max Area in Histogram,Problem Link,Hard,Solution Link,"Adobe, apple, Meta , Amazon, google, microsoft ",
