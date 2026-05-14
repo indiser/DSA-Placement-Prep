@@ -15,7 +15,6 @@ class Solution
             stack<int> s;
             int maxArea=0;
 
-            //Right neaerest smaller element
             for (int i = len-1; i >= 0; i--)
             {
                 while(s.size() > 0 && heights[s.top()] >= heights[i])
@@ -27,9 +26,8 @@ class Solution
             }
 
             while(!s.empty())
-                s.pop(); // Clear the stack for the next pass
+                s.pop();
 
-            //Left nerest smaller element
             for (int i = 0; i < len; i++)
             {
                 while(s.size() > 0 && heights[s.top()] >= heights[i])
