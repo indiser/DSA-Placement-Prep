@@ -16,19 +16,6 @@ struct TreeNode
 class Solution
 {
     public:
-        void helper(TreeNode *root, vector<int> &ans)
-        {
-            if(!root) return;
-            helper(root->left, ans);
-            ans.push_back(root->val);
-            helper(root->right, ans);
-        }
-        vector<int> inOrderTraversal(TreeNode *root)
-        {
-            vector<int> ans;
-            helper(root,ans);
-            return ans;
-        }
         bool isMirror(TreeNode *left, TreeNode *right)
         {
             if(!left && !right) return true;
