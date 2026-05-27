@@ -103,7 +103,7 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,2,Preorder,Problem Link,Easy,Solution Link,"salesforce, amazon, microsoft, meta , google ,adobe",
 ,TRUE,3,Postorder,Problem Link,Easy,Solution Link,"Amazon ,meta , google, apple, adobe ",
 ,TRUE,4,Symmetric Tree,Problem Link,Easy,," Amazon , Google, Oracle, Apple,meta,Uber,Intuit ,Adobe ",
-,FALSE,5,Minimum Distance between Nodes,Problem Link,Easy,https://www.youtube.com/watch?v=dSBcCynP1nA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt&index=100,"amazon, google, meta , linkedin , adobe, microsoft ",
+,TRUE,5,Minimum Distance between Nodes,Problem Link,Easy,https://www.youtube.com/watch?v=dSBcCynP1nA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt&index=100,"amazon, google, meta , linkedin , adobe, microsoft ",
 ,FALSE,6,Are 2 Trees Identical or Not,Problem Link,Easy,Solution Link,"meta , google , microsoft,",
 ,FALSE,7,Morris Inorder Traversal,Problem Link,Easy,Solution Link,"Google,amazon, meta ,apple, adobe, TCS, flipkart , uber, liinkedin ",
 ,FALSE,8,Diameter,Problem Link,Easy,Solution Link,"google, amazon, meta , microsoft , apple, adobe, uber",
