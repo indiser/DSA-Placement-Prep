@@ -107,7 +107,7 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,6,Are 2 Trees Identical or Not,Problem Link,Easy,Solution Link,"meta , google , microsoft,",
 ,TRUE,7,Morris Inorder Traversal,Problem Link,Easy,Solution Link,"Google,amazon, meta ,apple, adobe, TCS, flipkart , uber, liinkedin ",
 ,TRUE,8,Diameter,Problem Link,Easy,Solution Link,"google, amazon, meta , microsoft , apple, adobe, uber",
-,FALSE,9,Check if Tree is Height Balanced,Problem Link,Easy,,"amazon , meta , amazon , google ,visa , oracle , TCS , Adobe ",
+,TRUE,9,Check if Tree is Height Balanced,Problem Link,Easy,,"amazon , meta , amazon , google ,visa , oracle , TCS , Adobe ",
 ,FALSE,10,Subtree of Another Tree,Problem Link,Easy,Solution Link, Amazon google microsoft adobe uber apple ,
 ,FALSE,11,Check if BT Mirror of itself or not,Problem Link,Easy,,"Amazon, google, meta, uber , morgan stanley , ebay,microsoft ",
 ,FALSE,12,Top View of a Tree,Problem Link,Medium,Solution Link,"amazon, google, meta, linkedin , apple, adobe,microsoft ",
