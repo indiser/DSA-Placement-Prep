@@ -8,21 +8,21 @@ A comprehensive collection of Data Structures and Algorithms solutions curated f
 
 | Topic | Status | Progress |
 |-------|--------|----------|
-| Arrays | ✅ In Progress | 16/25 problems |
-| Binary Search | ✅ In Progress | 7/7 problems |
+| Arrays | ✅ In Progress | 20/25 problems |
+| Binary Search | ✅ Complete | 7/7 problems |
 | Strings | ✅ In Progress | 7/11 problems |
-| Linked Lists | ✅ In Progress | 6/13 problems |
-| Recursion & Backtracking | ✅ In Progress | 11/11 problems |
-| Binary Trees | 🔄 Not Started | 0/24 problems |
+| Linked Lists | ✅ In Progress | 12/13 problems |
+| Recursion & Backtracking | ✅ Complete | 11/11 problems |
+| Binary Trees | ✅ In Progress | 11/24 problems |
 | BST | 🔄 Not Started | 0/15 problems |
-| Stacks & Queues | 🔄 Not Started | 0/15 problems |
+| Stacks & Queues | ✅ Complete | 16/15 problems |
 | Graphs | 🔄 Not Started | 0/26 problems |
 | Dynamic Programming | 🔄 Not Started | 0/21 problems |
 | Greedy | 🔄 Not Started | 0/6 problems |
 | Heaps | 🔄 Not Started | 0/6 problems |
 | Tries | 🔄 Not Started | 0/5 problems |
 
-**Overall Progress:** ~47/150 problems (31%)
+**Overall Progress:** 84/178 problems (47%)
 
 ## 📚 Topics Covered (Planned)
 
@@ -60,14 +60,19 @@ Apna College DSA/
 │   └── Hard/          (1/3 problems) 🔄
 ├── Linked List/
 │   ├── Easy/          (5/5 problems) ✅
-│   ├── Medium/        (1/5 problems) 🔄
-│   └── Hard/          (0/3 problems) 🔄
+│   ├── Medium/        (6/5 problems) ✅
+│   └── Hard/          (1/3 problems) 🔄
 ├── Recursion_And_Backtracing/
 │   ├── Medium/        (8/8 problems) ✅
 │   └── Hard/          (3/3 problems) ✅
-├── Binary Trees/      (0/24 problems) 🔄
+├── Binary Trees/
+│   ├── Easy/          (8/8 problems) ✅
+│   └── Medium/        (3/9 problems) 🔄
 ├── BST/               (0/15 problems) 🔄
-├── Stack_And_Queue/   (0/15 problems) 🔄
+├── Stack_And_Queue/
+│   ├── Easy/          (7/7 problems) ✅
+│   ├── Medium/        (8/7 problems) ✅
+│   └── Hard/          (1/1 problem) ✅
 ├── Graph/             (0/26 problems) 🔄
 ├── DP/                (0/21 problems) 🔄
 ├── Greedy/            (0/6 problems) 🔄
@@ -80,12 +85,12 @@ Apna College DSA/
 
 ## 🎯 Completed Problem Categories
 
-### Arrays (16/25 Problems)
+### Arrays (20/25 Problems)
 **Easy (5/5):** ✅ Majority Element, Repeat & Missing Number, Merge Sorted Arrays, Single Number, Stock Buy & Sell
 
 **Medium (11/11):** ✅ Kadane's Algorithm, Pow(x,n), Container with Most Water, Sort Colors, 3Sum, 4Sum, Search 2D Matrix, Next Permutation, Merge Intervals, Set Matrix Zeroes, Word Search
 
-**Hard (0/9):** 🔄 Count Inversions, Trapping Rainwater, Sliding Window Maximum, Reverse Pairs, Largest Rectangle in Histogram, and more
+**Hard (4/9):** ✅ Count Inversions, Trapping Rainwater, Sliding Window Maximum, Reverse Pairs
 
 ### Binary Search (7/7 Problems) ✅
 **Medium:** Search in Rotated Sorted Array, Peak Index in Mountain Array, Single Element in Sorted Array, Book Allocation, Painter's Partition, Aggressive Cows
@@ -99,27 +104,37 @@ Apna College DSA/
 
 **Hard (1/3):** 🔄 Minimum Window Substring, KMP Algorithm, Rabin-Karp Algorithm
 
-### Linked Lists (6/13 Problems)
+### Linked Lists (12/13 Problems)
 **Easy (5/5):** ✅ Reverse LL, Middle of LL, Merge 2 Sorted LL, Check Palindrome, Detect Cycle
 
-**Medium (1/5):** 🔄 Flatten LL, Remove Cycle, Clone LL, Add 2 Numbers, LRU Cache
+**Medium (6/5):** ✅ Flatten LL, Add 2 Numbers, Clone LL, LRU Cache, Reverse LL II, Rotate LL
 
-**Hard (0/3):** 🔄 Reverse Nodes in K Groups, and more
+**Hard (1/3):** ✅ Reverse Nodes in K Groups
 
 ### Recursion & Backtracking (11/11 Problems) ✅
 **Medium:** Combination Sum I & II, Palindrome Partitioning, Knight's Tour, M-Coloring, Rat in Maze, Subsets II, Merge Sort
 
 **Hard:** N-Queens, Sudoku Solver, Count Inversions
 
+### Binary Trees (11/24 Problems)
+**Easy (8/8):** ✅ Inorder, Preorder, Postorder, Symmetric Tree, Minimum Distance, Diameter, Balanced Tree, Subtree
+
+**Medium (3/9):** ✅ Level Order Traversal, Find Bottom Left, Greater Sum Tree
+
+### Stacks & Queues (16/15 Problems) ✅
+**Easy (7/7):** ✅ Implement Stack Using Queue, Implement Queue Using Stack, Next Greater I, First Unique Character, Reverse First K, Time to Buy Tickets
+
+**Medium (8/7):** ✅ Next Greater II, Previous Smaller, Celebrity, Min Stack, Gas Station, Rotten Oranges, Stock Span, Max Subarray Min Product
+
+**Hard (1/1):** ✅ Largest Area Rectangle
+
 ### Planned Topics (Not Started)
-- **Binary Trees** (24 problems)
 - **BST** (15 problems)
 - **Graphs** (26 problems)
 - **Dynamic Programming** (21 problems)
 - **Greedy** (6 problems)
 - **Heaps** (6 problems)
 - **Tries** (5 problems)
-- **Stacks & Queues** (15 problems)
 
 ## 🛠️ Tech Stack
 
@@ -253,8 +268,8 @@ For questions or clarifications:
 ---
 
 - **Last Updated:** 2026
-- **Total Problems (Completed):** ~47/150 (31%)
-- **Topics (In Progress):** 13
+- **Total Problems (Completed):** 84/178 (47%)
+- **Topics (Completed):** 3 | **Topics (In Progress):** 5
 - **Difficulty Levels:** Easy, Medium, Hard
 
 **Disclaimer:** This repository is a work in progress and is being continuously updated. Solutions and content may change as the project develops. Use at your own discretion for learning purposes.
