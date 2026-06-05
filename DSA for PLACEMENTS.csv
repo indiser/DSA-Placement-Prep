@@ -116,7 +116,7 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,15,Kth Level of Tree,Problem Link,Medium,Solution Link,"meta , google, amazon, adobe, microsoft ",
 ,TRUE,16,LCA,Problem Link,Medium,Solution Link,"meta , amazon , google, linkedin , intuit , oracle,adobe, flipkart , salesforce, morgan stanley ",
 ,TRUE,17,Transform to Sum Tree,Problem Link,Medium,Solution Link,"SAP , Amazon, Ebay , Microsoft ",
-,FALSE,18,Construct BT from Inorder & Pre order,Problem Link,Medium,Solution Link," Amazon,  Microsoft, meta , adobe, uber , VMware , apple ",
+,TRUE,18,Construct BT from Inorder & Pre order,Problem Link,Medium,Solution Link," Amazon,  Microsoft, meta , adobe, uber , VMware , apple ",
 ,FALSE,19,Construct BT from Inorder & Post order,Problem Link,Medium,,"Google, amazon, microsoft , adobe, bloomberg ",
 ,FALSE,20,Flatten BT to LL,Problem Link,Medium,Solution Link,"Google, meta , amazon ,microsoft, Myntra , adobe, oracle, apple",
 ,FALSE,21,Max Width of BT,Problem Link,Medium,Solution Link,"Amazon , Meta , Uber, Microsoft, Uber , Adobe,Apple , google ",
