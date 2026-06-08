@@ -116,10 +116,17 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,15,Kth Level of Tree,Problem Link,Medium,Solution Link,"meta , google, amazon, adobe, microsoft ",
 ,TRUE,16,LCA,Problem Link,Medium,Solution Link,"meta , amazon , google, linkedin , intuit , oracle,adobe, flipkart , salesforce, morgan stanley ",
 ,TRUE,17,Transform to Sum Tree,Problem Link,Medium,Solution Link,"SAP , Amazon, Ebay , Microsoft ",
+<<<<<<< HEAD
 ,TRUE,18,Construct BT from Inorder & Pre order,Problem Link,Medium,Solution Link," Amazon,  Microsoft, meta , adobe, uber , VMware , apple ",
 ,TRUE,19,Construct BT from Inorder & Post order,Problem Link,Medium,,"Google, amazon, microsoft , adobe, bloomberg ",
 ,TRUE,20,Flatten BT to LL,Problem Link,Medium,Solution Link,"Google, meta , amazon ,microsoft, Myntra , adobe, oracle, apple",
 ,TRUE,21,Max Width of BT,Problem Link,Medium,Solution Link,"Amazon , Meta , Uber, Microsoft, Uber , Adobe,Apple , google ",
+=======
+,FALSE,18,Construct BT from Inorder & Pre order,Problem Link,Medium,Solution Link," Amazon,  Microsoft, meta , adobe, uber , VMware , apple ",
+,FALSE,19,Construct BT from Inorder & Post order,Problem Link,Medium,,"Google, amazon, microsoft , adobe, bloomberg ",
+,FALSE,20,Flatten BT to LL,Problem Link,Medium,Solution Link,"Google, meta , amazon ,microsoft, Myntra , adobe, oracle, apple",
+,FALSE,21,Max Width of BT,Problem Link,Medium,Solution Link,"Amazon , Meta , Uber, Microsoft, Uber , Adobe,Apple , google ",
+>>>>>>> 5cdc34e (03/06/2026)
 ,FALSE,22,Zig Zag Traversal of BT,Problem Link,Medium,,"Amazon , meta, microsoft, google,oracle, Adobe, Walmart Labs , Ebay , Flipkart",
 ,FALSE,23,Max Path Sum,Problem Link,Hard,,"Google, Meta , Amazon , Oracle, Salesforce, Goldman sachs , Uber, Flipkart ",
 ,FALSE,24,Kth Ancestor,Problem Link,Hard,,"Google , Amazon ,Microsoft ",
