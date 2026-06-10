@@ -23,7 +23,7 @@ class Solution {
             queue<TreeNode*> q;
             int level=0;
 
-            vector<vector<int>> ans, rev;
+            vector<vector<int>> ans;
             q.push(root);
 
             while(!q.empty())
