@@ -125,7 +125,7 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,20,Flatten BT to LL,Problem Link,Medium,Solution Link,"Google, meta , amazon ,microsoft, Myntra , adobe, oracle, apple",
 ,TRUE,21,Max Width of BT,Problem Link,Medium,Solution Link,"Amazon , Meta , Uber, Microsoft, Uber , Adobe,Apple , google ",
 ,TRUE,22,Zig Zag Traversal of BT,Problem Link,Medium,,"Amazon , meta, microsoft, google,oracle, Adobe, Walmart Labs , Ebay , Flipkart",
-,FALSE,23,Max Path Sum,Problem Link,Hard,,"Google, Meta , Amazon , Oracle, Salesforce, Goldman sachs , Uber, Flipkart ",
+,TRUE,23,Max Path Sum,Problem Link,Hard,,"Google, Meta , Amazon , Oracle, Salesforce, Goldman sachs , Uber, Flipkart ",
 ,FALSE,24,Kth Ancestor,Problem Link,Hard,,"Google , Amazon ,Microsoft ",
 ,,,,,,,,
 ,,,,,,,,
