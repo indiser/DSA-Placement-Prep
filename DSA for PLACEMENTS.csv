@@ -129,7 +129,7 @@ BINARY TREES,TRUE,1,Inorder,Problem Link,Easy,Solution Link,"google , amazon , m
 ,TRUE,24,Kth Ancestor,Problem Link,Hard,,"Google , Amazon ,Microsoft ",
 ,,,,,,,,
 ,,,,,,,,
-BST,FALSE,1,Kth largest in BST,Problem Link,Easy,,"Meta , Amazon, Google , Adobe, Atlassian , Salesforce ",
+BST,TRUE,1,Kth largest in BST,Problem Link,Easy,,"Meta , Amazon, Google , Adobe, Atlassian , Salesforce ",
 ,FALSE,2,Sorted Array to Balanced BST,Problem Link,Easy,Solution Link,"Amazon , Google, Meta, Apple, Adobe , Airbnb , Samsung ",
 ,FALSE,3,Validate BST,Problem Link,Medium,Solution Link,"Amazon, Google, Meta, Salesforce, IBM , Adobe, Citadel , Oracle , Uber",
 ,FALSE,4,Kth Smallest in BST,Problem Link,Medium,Solution Link, Accolite Amazon Google Uber Microsoft Meta ,
