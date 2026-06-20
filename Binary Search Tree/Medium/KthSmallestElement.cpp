@@ -32,7 +32,6 @@ class Solution
         int kthSmallest(TreeNode *root, int k)
         {
             vector<int> arr = inOrderTraversal(root);
-            sort(arr.begin(), arr.end());
             return arr[k-1];
         }
 };
