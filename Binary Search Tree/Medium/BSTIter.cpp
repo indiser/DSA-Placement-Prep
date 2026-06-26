@@ -12,8 +12,8 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-// Time Complexity: O(1)
-// Space Complexity: O(h) [h = height of the tree]
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 class BSTIterator
 {
     public:
