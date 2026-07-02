@@ -7,24 +7,25 @@
 using namespace std;
 
 
-// Time Complexity: O(n^2 logn)
-// Space Complexity: O(n)
+// Time Complexity: O(n^2 logk)
+// Space Complexity: O(k)
 class Solution
 {
     public:
         int kthSamallest(vector<vector<int>> &matrix, int k)
         {
-            vector<int> ans;
+            priority_queue<int> maxHeap;
             int n = matrix.size();
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    ans.push_back(matrix[i][j]);
+                    maxHeap.push(matrix[i][j]);
+
+                    if(maxHeap.size() > k) maxHeap.pop();
                 }
             }
-            sort(ans.begin(), ans.end());
-            return ans[k-1];
+            return maxHeap.top();
         }
 };
 
