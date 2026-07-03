@@ -156,7 +156,7 @@ HEAPS,TRUE,1,Merge K Sorted Arrays,https://leetcode.com/problems/merge-sorted-ar
 ,,,,,,,,
 TRIE,TRUE,1,Longest Common Prefix,https://leetcode.com/problems/longest-common-prefix/description/,Easy,,"amazon, TCS, Visa, Accenture, Infosys , Deloitte , Google , Oracle",
 ,TRUE,2,Word Break Problem,https://leetcode.com/problems/word-break/description/,Medium,," Amazon,  Google , Netflix , Intuit , Walmart Labs , Salesforce , Flipkart , Uber, oracle ",
-,FALSE,3,Implement a Phone Directory,https://leetcode.com/problems/design-phone-directory/description/,Medium,,Google ,
+,TRUE,3,Implement a Phone Directory,https://leetcode.com/problems/design-phone-directory/description/,Medium,,Google ,
 ,FALSE,4,Implement a Trie,https://leetcode.com/problems/implement-trie-prefix-tree/description/,Medium,,"Google, Amazon, Apple, Meta, Uber, Nvidia , Samsung ",
 ,FALSE,5,Longest String with All Prefix,https://leetcode.com/problems/longest-word-with-all-prefixes/description/,Medium,,Google ,
 ,,,,,,,,
