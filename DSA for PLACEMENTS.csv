@@ -158,7 +158,7 @@ TRIE,TRUE,1,Longest Common Prefix,https://leetcode.com/problems/longest-common-p
 ,TRUE,2,Word Break Problem,https://leetcode.com/problems/word-break/description/,Medium,," Amazon,  Google , Netflix , Intuit , Walmart Labs , Salesforce , Flipkart , Uber, oracle ",
 ,TRUE,3,Implement a Phone Directory,https://leetcode.com/problems/design-phone-directory/description/,Medium,,Google ,
 ,TRIE,4,Implement a Trie,https://leetcode.com/problems/implement-trie-prefix-tree/description/,Medium,,"Google, Amazon, Apple, Meta, Uber, Nvidia , Samsung ",
-,FALSE,5,Longest String with All Prefix,https://leetcode.com/problems/longest-word-with-all-prefixes/description/,Medium,,Google ,
+,TRUE,5,Longest String with All Prefix,https://leetcode.com/problems/longest-word-with-all-prefixes/description/,Medium,,Google ,
 ,,,,,,,,
 ,,,,,,,,
 GRAPH,FALSE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/description/,Easy,,"Samsung , Flipkart ,SAP Labs , Ola , amazon, microsoft, adobe ",
