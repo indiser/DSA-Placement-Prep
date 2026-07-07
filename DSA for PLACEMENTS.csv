@@ -166,7 +166,7 @@ GRAPH,TRUE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/descr
 ,TRUE,3,DFS,https://leetcode.com/problems/number-of-islands/,Medium,,"Amazon, Meta , Google, Visa, Adobe, Microsoft, Apple, Oracle, Flipkart ",
 ,TRUE,4,Detect cycle in undirected using BFS,https://leetcode.com/problems/redundant-connection/,Medium,,"Amazon, Meta , Google, Visa, Adobe, Microsoft, Apple, Oracle, Flipkart ",
 ,TRUE,5,Detect cycle in undirected using DFS,https://leetcode.com/problems/redundant-connection/,Medium,,"Google , Meta , microsoft, Inmobi , Amazon  ",
-,FALSE,6,Detect cycle in directed using BFS,https://leetcode.com/problems/course-schedule/description/,Medium,,"Google , Meta , microsoft, Inmobi , Amazon ",
+,TRUE,6,Detect cycle in directed using BFS,https://leetcode.com/problems/course-schedule/description/,Medium,,"Google , Meta , microsoft, Inmobi , Amazon ",
 ,FALSE,7,Detect cycle in directed using DFS,https://leetcode.com/problems/course-schedule/description/,Medium,,"Google, Amazon, Meta ,Microsoft, Apple, uber, Adobe,Yahoo",
 ,FALSE,8,Topological Sorting (DFS),https://leetcode.com/problems/course-schedule-ii/,Medium,,"Flipkart, Morgan Stanley, Accolite, Amazon , Microsoft, OYO , Samsung  , DE Shaw , Visa , Moonfrog Labs ",
 ,FALSE,9,Prim's Algorithm (MST),https://leetcode.com/problems/min-cost-to-connect-all-points/description/,Medium,,"Flipkart, Morgan Stanley, Accolite, Amazon , Microsoft, OYO , Samsung  , DE Shaw , Visa",
