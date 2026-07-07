@@ -13,16 +13,16 @@ A comprehensive collection of Data Structures and Algorithms solutions curated f
 | Strings | ✅ In Progress | 7/11 problems |
 | Linked Lists | ✅ In Progress | 12/13 problems |
 | Recursion & Backtracking | ✅ Complete | 11/11 problems |
-| Binary Trees | ✅ In Progress | 11/24 problems |
-| BST | 🔄 Not Started | 0/15 problems |
-| Stacks & Queues | ✅ Complete | 16/15 problems |
-| Graphs | 🔄 Not Started | 0/26 problems |
+| Binary Trees | ✅ In Progress | 18/24 problems |
+| BST | ✅ In Progress | 14/15 problems |
+| Stacks & Queues | ✅ Complete | 16/16 problems |
+| Graphs | ✅ In Progress | 5/26 problems |
 | Dynamic Programming | 🔄 Not Started | 0/21 problems |
 | Greedy | 🔄 Not Started | 0/6 problems |
-| Heaps | 🔄 Not Started | 0/6 problems |
-| Tries | 🔄 Not Started | 0/5 problems |
+| Heaps | ✅ In Progress | 4/6 problems |
+| Tries | ✅ In Progress | 5/5 problems |
 
-**Overall Progress:** 84/178 problems (47%)
+**Overall Progress:** 119/185 problems (64%)
 
 ## 📚 Topics Covered (Planned)
 
@@ -67,17 +67,21 @@ Apna College DSA/
 │   └── Hard/          (3/3 problems) ✅
 ├── Binary Trees/
 │   ├── Easy/          (8/8 problems) ✅
-│   └── Medium/        (3/9 problems) 🔄
-├── BST/               (0/15 problems) 🔄
+│   ├── Medium/        (8/9 problems) 🔄
+│   └── Hard/          (2/2 problems) ✅
+├── Binary Search Tree/
+│   ├── Easy/          (2/2 problems) ✅
+│   ├── Medium/        (9/10 problems) 🔄
+│   └── Hard/          (3/3 problems) ✅
 ├── Stack_And_Queue/
 │   ├── Easy/          (7/7 problems) ✅
 │   ├── Medium/        (8/7 problems) ✅
 │   └── Hard/          (1/1 problem) ✅
-├── Graph/             (0/26 problems) 🔄
+├── Graph/             (5/26 problems) 🔄
 ├── DP/                (0/21 problems) 🔄
 ├── Greedy/            (0/6 problems) 🔄
-├── Heaps/             (0/6 problems) 🔄
-├── Trie/              (0/5 problems) 🔄
+├── Heap/              (4/6 problems) 🔄
+├── Trie/              (5/5 problems) ✅
 ├── DSA for PLACEMENTS.csv
 ├── DSA for PLACEMENTS.xlsx
 └── README.md
@@ -116,10 +120,34 @@ Apna College DSA/
 
 **Hard:** N-Queens, Sudoku Solver, Count Inversions
 
-### Binary Trees (11/24 Problems)
+### Binary Trees (18/24 Problems)
 **Easy (8/8):** ✅ Inorder, Preorder, Postorder, Symmetric Tree, Minimum Distance, Diameter, Balanced Tree, Subtree
 
-**Medium (3/9):** ✅ Level Order Traversal, Find Bottom Left, Greater Sum Tree
+**Medium (8/9):** ✅ Level Order Traversal, Find Bottom Left, Greater Sum Tree, BT from Inorder & Preorder, BT from Inorder & Postorder, Flatten BT to LL, Max Width of BT, Zig Zag Traversal
+
+**Hard (2/2):** ✅ Max Path Sum, Kth Ancestor
+
+### BST (14/15 Problems)
+**Easy (2/2):** ✅ Sorted Array to BST, Kth Largest in Stream
+
+**Medium (9/10):** ✅ Validate BST, Kth Smallest, LCA in BST, Populate Next Right Pointers, Recover BST, Construct from Preorder, BST Iterator, Flatten BST to LL, Inorder Successor/Predecessor
+
+**Hard (3/3):** ✅ Largest BST in BT, Serialize & Deserialize BST, Merge 2 BSTs
+
+### Graphs (5/26 Problems)
+**Easy (1/1):** ✅ Flood Fill
+
+**Medium (4/25):** ✅ Number of Islands (BFS), Number of Islands (DFS), Detect Cycle in 2D Grid, Redundant Connection
+
+### Heaps (4/6 Problems)
+**Medium (3/5):** ✅ Top K Frequent Elements, Heap Sort, Kth Smallest Element
+
+**Hard (1/1):** ✅ Smallest Range in K Sorted Lists
+
+### Tries (5/5 Problems) ✅
+**Easy (1/1):** ✅ Longest Common Prefix
+
+**Medium (4/4):** ✅ Word Break, Design Phone Directory, Implement Trie, Longest String with All Prefix
 
 ### Stacks & Queues (16/15 Problems) ✅
 **Easy (7/7):** ✅ Implement Stack Using Queue, Implement Queue Using Stack, Next Greater I, First Unique Character, Reverse First K, Time to Buy Tickets
@@ -129,12 +157,8 @@ Apna College DSA/
 **Hard (1/1):** ✅ Largest Area Rectangle
 
 ### Planned Topics (Not Started)
-- **BST** (15 problems)
-- **Graphs** (26 problems)
 - **Dynamic Programming** (21 problems)
 - **Greedy** (6 problems)
-- **Heaps** (6 problems)
-- **Tries** (5 problems)
 
 ## 🛠️ Tech Stack
 
@@ -268,8 +292,8 @@ For questions or clarifications:
 ---
 
 - **Last Updated:** 2026
-- **Total Problems (Completed):** 84/178 (47%)
-- **Topics (Completed):** 3 | **Topics (In Progress):** 5
+- **Total Problems (Completed):** 119/185 (64%)
+- **Topics (Completed):** 5 | **Topics (In Progress):** 6
 - **Difficulty Levels:** Easy, Medium, Hard
 
 **Disclaimer:** This repository is a work in progress and is being continuously updated. Solutions and content may change as the project develops. Use at your own discretion for learning purposes.
