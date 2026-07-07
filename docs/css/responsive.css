@@ -1,0 +1,203 @@
+/* ============================================================
+   responsive.css — Mobile-First Media Queries
+   Breakpoints: 480px · 768px · 1024px · 1280px
+   ============================================================ */
+
+/* ── Base: Mobile-first (320px+) ── */
+
+/* Navbar: show hamburger, hide full nav */
+.navbar__nav         { display: none; }
+.navbar__github-text { display: none; }
+.navbar__hamburger   { display: flex; }
+.navbar__mobile-menu { display: flex; }
+
+/* Hero */
+.hero__headline { max-width: 100%; }
+.hero__ctas     { flex-direction: column; align-items: flex-start; }
+.hero__ctas .btn { width: 100%; justify-content: center; max-width: 340px; }
+.hero__stats-row { gap: var(--space-5); }
+
+/* Learning path: vertical */
+.learning-path {
+  grid-template-columns: 1fr;
+}
+.learning-path::before { display: none; }
+
+/* Contribution steps: 2 col */
+.contribution-steps {
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+.contribution-steps::before { display: none; }
+
+/* Footer: single column */
+.footer__inner {
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+/* Dashboard: single column */
+.dashboard-card {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Overview strip: grid */
+.overview-strip {
+  flex-direction: column;
+}
+.overview-strip__item {
+  border-right: none;
+  border-bottom: var(--border-w) solid var(--color-border);
+}
+.overview-strip__item:last-child { border-bottom: none; }
+
+/* Grids: single column */
+.grid-2, .grid-3, .grid-4 {
+  grid-template-columns: 1fr;
+}
+
+/* Company grid: 2 cols on tiny */
+.company-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* File tree: horizontal scroll */
+.file-tree__body { overflow-x: auto; }
+
+/* Roadmap container line */
+.roadmap-container::before { left: 20px; }
+.roadmap-step { padding-left: 56px; }
+.roadmap-step__node { width: 40px; height: 40px; font-size: 1.1rem; }
+
+/* ── 480px ── */
+@media (min-width: 480px) {
+  .company-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero__ctas .btn { width: auto; }
+}
+
+/* ── 640px ── */
+@media (min-width: 640px) {
+  .overview-strip {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .overview-strip__item {
+    flex: 0 0 50%;
+    border-right: var(--border-w) solid var(--color-border);
+    border-bottom: var(--border-w) solid var(--color-border);
+  }
+  .overview-strip__item:nth-child(2n) { border-right: none; }
+  .overview-strip__item:nth-last-child(-n+2) { border-bottom: none; }
+
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .learning-path { grid-template-columns: repeat(2, 1fr); }
+
+  .dashboard-card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contribution-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── 768px (Tablet) ── */
+@media (min-width: 768px) {
+  .navbar__nav { display: flex; }
+  .navbar__hamburger { display: none; }
+  .navbar__mobile-menu { display: none !important; }
+  .navbar__github-text { display: inline; }
+
+  .hero__ctas { flex-direction: row; }
+
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+  .company-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .overview-strip {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .overview-strip__item {
+    flex: 1;
+    border-right: var(--border-w) solid var(--color-border);
+    border-bottom: none;
+  }
+  .overview-strip__item:last-child { border-right: none; }
+
+  .footer__inner { grid-template-columns: 1.5fr 1fr 1fr; }
+
+  .search-filters { flex-wrap: nowrap; }
+}
+
+/* ── 1024px (Desktop) ── */
+@media (min-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .learning-path {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .learning-path::before { display: block; }
+
+  .contribution-steps::before { display: block; }
+
+  .footer__inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+
+  .company-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .roadmap-container::before { left: 28px; }
+  .roadmap-step { padding-left: 72px; }
+  .roadmap-step__node { width: 56px; height: 56px; font-size: 1.4rem; }
+}
+
+/* ── 1280px (Wide Desktop) ── */
+@media (min-width: 1280px) {
+  .company-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .navbar__nav-link {
+    padding: var(--space-2) var(--space-4);
+  }
+}
+
+/* ── 1440px ── */
+@media (min-width: 1440px) {
+  :root {
+    --section-py: 8rem;
+  }
+}
+
+/* ── Touch targets ── */
+@media (pointer: coarse) {
+  .btn, .navbar__nav-link, .filter-btn,
+  .navbar__theme-btn, .navbar__hamburger {
+    min-height: 44px;
+  }
+
+  .tree-item { min-height: 44px; }
+  .roadmap-step__card { padding-block: var(--space-5); }
+}
+
+/* ── Dark mode scrollbar ── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+  }
+}
+
+/* ── Print ── */
+@media print {
+  .navbar, .search-wrap, .search-filters { display: none; }
+  body { background: white; color: black; }
+}

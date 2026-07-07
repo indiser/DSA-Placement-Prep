@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>DSA Placement Prep — 119/185 Problems Solved | C++ Solutions by Rana B</title>
+  <meta name="description" content="A production-quality C++ DSA repository covering 13 topics — Arrays, Trees, Graphs, DP, and more — built for cracking top-tier technical interviews at FAANG & beyond. 119/185 problems solved." />
+  <meta name="keywords" content="DSA, Data Structures, Algorithms, C++, LeetCode, Interview Prep, FAANG, Placement, Apna College, Binary Trees, Graphs, Dynamic Programming" />
+  <meta name="author" content="Rana B" />
+  <link rel="canonical" href="https://indiser.github.io/DSA-Placement-Prep/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="DSA Placement Prep — 119/185 Problems Solved" />
+  <meta property="og:description" content="Premium C++ DSA solution repository. 13 topics. 119+ problems. Built to crack technical interviews at top companies." />
+  <meta property="og:url"         content="https://indiser.github.io/DSA-Placement-Prep/" />
+  <meta property="og:site_name"   content="DSA Placement Prep" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="DSA Placement Prep — 119/185 Problems" />
+  <meta name="twitter:description" content="Premium C++ DSA solution repository built for cracking technical interviews." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "DSA Placement Prep",
+    "description": "Comprehensive Data Structures and Algorithms solutions in C++ for interview preparation",
+    "url": "https://github.com/indiser/DSA-Placement-Prep",
+    "programmingLanguage": "C++",
+    "author": { "@type": "Person", "name": "Rana B" },
+    "codeRepository": "https://github.com/indiser/DSA-Placement-Prep"
+  }
+  </script>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text y='22' x='4' font-size='18' font-family='monospace' fill='%23FFF4D6' font-weight='900'>{'>'}</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar__inner">
+
+    <!-- Logo -->
+    <a href="#home" class="navbar__logo" aria-label="DSA Placement Prep Home">
+      <div class="navbar__logo-mark">{'>'}</div>
+      <span>DSA Prep</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="navbar__nav" role="menubar">
+      <a href="#progress"   class="navbar__nav-link" role="menuitem">Progress</a>
+      <a href="#topics"     class="navbar__nav-link" role="menuitem">Topics</a>
+      <a href="#roadmap"    class="navbar__nav-link" role="menuitem">Roadmap</a>
+      <a href="#stats"      class="navbar__nav-link" role="menuitem">Statistics</a>
+      <a href="#search"     class="navbar__nav-link" role="menuitem">Search</a>
+      <a href="#resources"  class="navbar__nav-link" role="menuitem">Resources</a>
+    </div>
+
+    <!-- Actions -->
+    <div class="navbar__actions">
+      <a href="https://github.com/indiser/DSA-Placement-Prep"
+         target="_blank" rel="noopener noreferrer"
+         class="navbar__github btn btn--primary btn--sm"
+         aria-label="View on GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        <span class="navbar__github-text">GitHub</span>
+      </a>
+      <button class="navbar__theme-btn" data-theme-toggle aria-label="Toggle theme" title="Toggle theme" id="theme-toggle">🌙</button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="navbar__mobile-menu" id="mobile-menu" role="menu" aria-label="Mobile navigation">
+  <a href="#home"       class="navbar__mobile-link" role="menuitem">Home</a>
+  <a href="#progress"   class="navbar__mobile-link" role="menuitem">Progress</a>
+  <a href="#topics"     class="navbar__mobile-link" role="menuitem">Topics</a>
+  <a href="#roadmap"    class="navbar__mobile-link" role="menuitem">Roadmap</a>
+  <a href="#stats"      class="navbar__mobile-link" role="menuitem">Statistics</a>
+  <a href="#search"     class="navbar__mobile-link" role="menuitem">Search</a>
+  <a href="#resources"  class="navbar__mobile-link" role="menuitem">Resources</a>
+  <a href="https://github.com/indiser/DSA-Placement-Prep" target="_blank" class="navbar__mobile-link" style="color:var(--color-accent)" role="menuitem">★ GitHub →</a>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="home" class="hero" aria-label="Hero">
+  <div class="hero__grid-bg" aria-hidden="true"></div>
+  <div class="hero__shapes" aria-hidden="true">
+    <div class="hero__shape hero__shape--sq1"></div>
+    <div class="hero__shape hero__shape--sq2"></div>
+    <div class="hero__shape hero__shape--sq3"></div>
+    <div class="hero__shape hero__shape--circle"></div>
+    <div class="hero__shape hero__shape--dot"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__badge">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      Active · 119 of 185 problems solved
+    </div>
+
+    <h1 class="hero__headline">
+      Master Data<br>
+      Structures.<br>
+      <span class="line-accent">Crack Interviews.</span>
+    </h1>
+
+    <p class="hero__subtitle">
+      A production-quality C++ DSA repository — 13 topics, 185 curated problems, and battle-tested solutions
+      aligned with FAANG interview patterns.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="#topics"
+         class="btn btn--primary btn--lg"
+         id="hero-explore-btn">
+        Explore Topics
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="https://github.com/indiser/DSA-Placement-Prep"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn--ghost btn--lg btn--github"
+         id="hero-github-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub Repository
+      </a>
+      <a href="#progress" class="btn btn--card btn--lg" id="hero-progress-btn">
+        View Progress
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </a>
+    </div>
+
+    <div class="hero__stats-row">
+      <div class="hero__stat-item">
+        <span class="hero__stat-num"><span id="hero-pct">0%</span></span>
+        <span class="hero__stat-label">Completion</span>
+      </div>
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">119</span>
+        <span class="hero__stat-label">Problems Solved</span>
+      </div>
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">13</span>
+        <span class="hero__stat-label">Topics</span>
+      </div>
+      <div class="hero__stat-item">
+        <span class="hero__stat-num">20+</span>
+        <span class="hero__stat-label">Companies Covered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     OVERVIEW STRIP
+══════════════════════════════════════════ -->
+<div class="container" style="padding-block:var(--space-12)">
+  <div class="overview-strip reveal">
+    <div class="overview-strip__item">
+      <div class="overview-strip__value" data-counter data-target="119">0</div>
+      <div class="overview-strip__label">Problems Solved</div>
+    </div>
+    <div class="overview-strip__item">
+      <div class="overview-strip__value" data-counter data-target="66">0</div>
+      <div class="overview-strip__label">Remaining</div>
+    </div>
+    <div class="overview-strip__item">
+      <div class="overview-strip__value" data-counter data-target="64" data-suffix="%">0%</div>
+      <div class="overview-strip__label">Completion</div>
+    </div>
+    <div class="overview-strip__item">
+      <div class="overview-strip__value" data-counter data-target="13">0</div>
+      <div class="overview-strip__label">Topics</div>
+    </div>
+    <div class="overview-strip__item">
+      <div class="overview-strip__value" data-counter data-target="20" data-suffix="+">0+</div>
+      <div class="overview-strip__label">Companies</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     STATISTICS
+══════════════════════════════════════════ -->
+<section id="stats" class="section--alt" aria-labelledby="stats-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Statistics</div>
+      <h2 class="section-title" id="stats-heading">By the Numbers</h2>
+      <p class="section-subtitle">Real-time progress snapshot of this DSA journey — every problem, every topic tracked.</p>
+    </div>
+
+    <div class="grid-4 reveal">
+      <div class="stat-card stagger-1">
+        <div class="stat-card__icon">✅</div>
+        <div class="stat-card__value" data-counter data-target="119" data-duration="1600">0</div>
+        <div class="stat-card__label">Problems Solved</div>
+        <div class="stat-card__sub">Out of 185 total</div>
+      </div>
+      <div class="stat-card stagger-2">
+        <div class="stat-card__icon">⏳</div>
+        <div class="stat-card__value" data-counter data-target="66">0</div>
+        <div class="stat-card__label">Problems Remaining</div>
+        <div class="stat-card__sub">66 more to crush</div>
+      </div>
+      <div class="stat-card stagger-3">
+        <div class="stat-card__icon">🎯</div>
+        <div class="stat-card__value" data-counter data-target="64" data-suffix="%">0%</div>
+        <div class="stat-card__label">Completion Rate</div>
+        <div class="stat-card__sub">Steadily climbing</div>
+      </div>
+      <div class="stat-card stagger-4">
+        <div class="stat-card__icon">📚</div>
+        <div class="stat-card__value" data-counter data-target="13">0</div>
+        <div class="stat-card__label">Topics Covered</div>
+        <div class="stat-card__sub">5 complete · 6 in-progress</div>
+      </div>
+      <div class="stat-card stagger-1">
+        <div class="stat-card__icon">🏢</div>
+        <div class="stat-card__value" data-counter data-target="20" data-suffix="+">0+</div>
+        <div class="stat-card__label">Companies Covered</div>
+        <div class="stat-card__sub">FAANG + top MNCs</div>
+      </div>
+      <div class="stat-card stagger-2">
+        <div class="stat-card__icon">⚡</div>
+        <div class="stat-card__value" data-counter data-target="5">0</div>
+        <div class="stat-card__label">Topics 100% Done</div>
+        <div class="stat-card__sub">Binary Search, Stacks, Tries…</div>
+      </div>
+      <div class="stat-card stagger-3">
+        <div class="stat-card__icon">📁</div>
+        <div class="stat-card__value" data-counter data-target="119">0</div>
+        <div class="stat-card__label">Solution Files</div>
+        <div class="stat-card__sub">Well-commented C++ code</div>
+      </div>
+      <div class="stat-card stagger-4">
+        <div class="stat-card__icon">🔤</div>
+        <div class="stat-card__value">C++</div>
+        <div class="stat-card__label">Primary Language</div>
+        <div class="stat-card__sub">STL · C++17 standard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PROGRESS DASHBOARD
+══════════════════════════════════════════ -->
+<section id="progress" aria-labelledby="progress-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Dashboard</div>
+      <h2 class="section-title" id="progress-heading">Progress Dashboard</h2>
+      <p class="section-subtitle">Live completion tracking for every topic — rings, bars, and exact counts.</p>
+    </div>
+
+    <!-- Big Overall Ring -->
+    <div style="display:flex;align-items:center;gap:var(--space-8);flex-wrap:wrap;
+                padding:var(--space-8);background:var(--color-card);
+                border:var(--border-w) solid var(--color-border);
+                box-shadow:var(--shadow);margin-bottom:var(--space-8)" class="reveal">
+      <div class="ring-container" data-ring-pct="64" style="width:140px;height:140px">
+        <svg viewBox="0 0 100 100" class="progress-ring">
+          <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+          <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-accent)" style="stroke-dashoffset:263.89"/>
+        </svg>
+        <div class="ring-container__text">
+          <span class="ring-pct" style="font-size:var(--text-2xl)">64%</span>
+          <span class="ring-solved">119/185</span>
+        </div>
+      </div>
+      <div style="flex:1;min-width:200px">
+        <h3 style="font-size:var(--text-2xl);font-weight:900;letter-spacing:-0.03em;margin-bottom:var(--space-2)">Overall Progress</h3>
+        <p style="color:var(--color-muted);font-size:var(--text-base);margin-bottom:var(--space-4)">119 problems solved across 13 DSA topics. Actively working through Graphs with DP & Greedy up next.</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+          <span class="badge badge--complete">5 Topics Complete</span>
+          <span class="badge badge--in-progress">6 Topics In Progress</span>
+          <span class="badge badge--not-started">2 Topics Planned</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Per-topic dashboard -->
+    <div id="progress-grid" style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+      <!-- Arrays -->
+      <div class="dashboard-card reveal stagger-1">
+        <div class="ring-container" data-ring-pct="80">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-warning)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">80%</span><span class="ring-solved">20/25</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Arrays</div>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="80" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">20 of 25 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 5/5</span>
+              <span class="diff-chip diff-chip--medium">Med 11/11</span>
+              <span class="diff-chip diff-chip--hard">Hard 4/9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Binary Search -->
+      <div class="dashboard-card reveal stagger-2">
+        <div class="ring-container" data-ring-pct="100">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-success)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">100%</span><span class="ring-solved">7/7</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Binary Search</div>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">7 of 7 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--medium">Med 6/6</span>
+              <span class="diff-chip diff-chip--hard">Hard 1/1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strings -->
+      <div class="dashboard-card reveal stagger-3">
+        <div class="ring-container" data-ring-pct="64">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-blue)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">64%</span><span class="ring-solved">7/11</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Strings</div>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="64" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">7 of 11 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 3/3</span>
+              <span class="diff-chip diff-chip--medium">Med 3/5</span>
+              <span class="diff-chip diff-chip--hard">Hard 1/3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linked Lists -->
+      <div class="dashboard-card reveal stagger-4">
+        <div class="ring-container" data-ring-pct="92">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-warning)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">92%</span><span class="ring-solved">12/13</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Linked Lists</div>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="92" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">12 of 13 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 5/5</span>
+              <span class="diff-chip diff-chip--medium">Med 6/5</span>
+              <span class="diff-chip diff-chip--hard">Hard 1/3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recursion & Backtracking -->
+      <div class="dashboard-card reveal stagger-5">
+        <div class="ring-container" data-ring-pct="100">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-success)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">100%</span><span class="ring-solved">11/11</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Recursion & Backtracking</div>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">11 of 11 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--medium">Med 8/8</span>
+              <span class="diff-chip diff-chip--hard">Hard 3/3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Binary Trees -->
+      <div class="dashboard-card reveal stagger-6">
+        <div class="ring-container" data-ring-pct="75">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-blue)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">75%</span><span class="ring-solved">18/24</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Binary Trees</div>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="75" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">18 of 24 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 8/8</span>
+              <span class="diff-chip diff-chip--medium">Med 8/9</span>
+              <span class="diff-chip diff-chip--hard">Hard 2/2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BST -->
+      <div class="dashboard-card reveal stagger-7">
+        <div class="ring-container" data-ring-pct="93">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-warning)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">93%</span><span class="ring-solved">14/15</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Binary Search Trees</div>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="93" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">14 of 15 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 2/2</span>
+              <span class="diff-chip diff-chip--medium">Med 9/10</span>
+              <span class="diff-chip diff-chip--hard">Hard 3/3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stacks & Queues -->
+      <div class="dashboard-card reveal stagger-8">
+        <div class="ring-container" data-ring-pct="100">
+          <svg viewBox="0 0 100 100" class="progress-ring">
+            <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-success)" style="stroke-dashoffset:263.89"/>
+          </svg>
+          <div class="ring-container__text"><span class="ring-pct">100%</span><span class="ring-solved">16/16</span></div>
+        </div>
+        <div class="dashboard-card__info">
+          <div class="flex-between" style="flex-wrap:wrap;gap:var(--space-3)">
+            <div class="dashboard-card__title">Stacks & Queues</div>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+          <div class="dashboard-card__meta">
+            <span class="dashboard-card__solved">16 of 16 problems</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <span class="diff-chip diff-chip--easy">Easy 7/7</span>
+              <span class="diff-chip diff-chip--medium">Med 8/7</span>
+              <span class="diff-chip diff-chip--hard">Hard 1/1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphs, Heaps, Tries in a row -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-4)">
+        <div class="dashboard-card reveal stagger-1">
+          <div class="ring-container" data-ring-pct="19">
+            <svg viewBox="0 0 100 100" class="progress-ring">
+              <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+              <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-accent)" style="stroke-dashoffset:263.89"/>
+            </svg>
+            <div class="ring-container__text"><span class="ring-pct">19%</span><span class="ring-solved">5/26</span></div>
+          </div>
+          <div class="dashboard-card__info">
+            <div class="flex-between"><div class="dashboard-card__title">Graphs</div><span class="badge badge--in-progress">Active</span></div>
+            <div data-bar-pct="19" class="progress-bar progress-bar--accent"><div class="progress-bar__fill" style="width:0%"></div></div>
+            <span class="dashboard-card__solved">5 of 26 problems</span>
+          </div>
+        </div>
+        <div class="dashboard-card reveal stagger-2">
+          <div class="ring-container" data-ring-pct="67">
+            <svg viewBox="0 0 100 100" class="progress-ring">
+              <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+              <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-blue)" style="stroke-dashoffset:263.89"/>
+            </svg>
+            <div class="ring-container__text"><span class="ring-pct">67%</span><span class="ring-solved">4/6</span></div>
+          </div>
+          <div class="dashboard-card__info">
+            <div class="flex-between"><div class="dashboard-card__title">Heaps</div><span class="badge badge--in-progress">In Progress</span></div>
+            <div data-bar-pct="67" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+            <span class="dashboard-card__solved">4 of 6 problems</span>
+          </div>
+        </div>
+        <div class="dashboard-card reveal stagger-3">
+          <div class="ring-container" data-ring-pct="100">
+            <svg viewBox="0 0 100 100" class="progress-ring">
+              <circle class="progress-ring__track" cx="50" cy="50" r="42"/>
+              <circle class="progress-ring__fill" cx="50" cy="50" r="42" stroke="var(--color-success)" style="stroke-dashoffset:263.89"/>
+            </svg>
+            <div class="ring-container__text"><span class="ring-pct">100%</span><span class="ring-solved">5/5</span></div>
+          </div>
+          <div class="dashboard-card__info">
+            <div class="flex-between"><div class="dashboard-card__title">Tries</div><span class="badge badge--complete">Complete ✓</span></div>
+            <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+            <span class="dashboard-card__solved">5 of 5 problems</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /#progress-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TOPIC EXPLORER
+══════════════════════════════════════════ -->
+<section id="topics" class="section--alt" aria-labelledby="topics-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Topic Explorer</div>
+      <h2 class="section-title" id="topics-heading">All Topics</h2>
+      <p class="section-subtitle">13 curated DSA topics — from foundational arrays to advanced graph algorithms.</p>
+    </div>
+
+    <div class="grid-auto">
+
+      <div class="topic-card in-progress reveal stagger-1">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔢</div>
+          <div>
+            <div class="topic-card__name">Arrays</div>
+            <div class="topic-card__fraction"><span>20</span>/25</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">80%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="80" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 5/5</span>
+          <span class="diff-chip diff-chip--medium">Med 11/11</span>
+          <span class="diff-chip diff-chip--hard">Hard 4/9</span>
+        </div>
+      </div>
+
+      <div class="topic-card complete reveal stagger-2">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔍</div>
+          <div>
+            <div class="topic-card__name">Binary Search</div>
+            <div class="topic-card__fraction"><span>7</span>/7</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">100%</span>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--medium">Med 6/6</span>
+          <span class="diff-chip diff-chip--hard">Hard 1/1</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-3">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔤</div>
+          <div>
+            <div class="topic-card__name">Strings</div>
+            <div class="topic-card__fraction"><span>7</span>/11</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">64%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="64" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 3/3</span>
+          <span class="diff-chip diff-chip--medium">Med 3/5</span>
+          <span class="diff-chip diff-chip--hard">Hard 1/3</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-4">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔗</div>
+          <div>
+            <div class="topic-card__name">Linked Lists</div>
+            <div class="topic-card__fraction"><span>12</span>/13</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">92%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="92" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 5/5</span>
+          <span class="diff-chip diff-chip--medium">Med 6/5</span>
+          <span class="diff-chip diff-chip--hard">Hard 1/3</span>
+        </div>
+      </div>
+
+      <div class="topic-card complete reveal stagger-5">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔄</div>
+          <div>
+            <div class="topic-card__name">Recursion & BT</div>
+            <div class="topic-card__fraction"><span>11</span>/11</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">100%</span>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--medium">Med 8/8</span>
+          <span class="diff-chip diff-chip--hard">Hard 3/3</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-6">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🌳</div>
+          <div>
+            <div class="topic-card__name">Binary Trees</div>
+            <div class="topic-card__fraction"><span>18</span>/24</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">75%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="75" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 8/8</span>
+          <span class="diff-chip diff-chip--medium">Med 8/9</span>
+          <span class="diff-chip diff-chip--hard">Hard 2/2</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-1">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🌲</div>
+          <div>
+            <div class="topic-card__name">BST</div>
+            <div class="topic-card__fraction"><span>14</span>/15</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">93%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="93" class="progress-bar progress-bar--warning"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 2/2</span>
+          <span class="diff-chip diff-chip--medium">Med 9/10</span>
+          <span class="diff-chip diff-chip--hard">Hard 3/3</span>
+        </div>
+      </div>
+
+      <div class="topic-card complete reveal stagger-2">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">📚</div>
+          <div>
+            <div class="topic-card__name">Stacks & Queues</div>
+            <div class="topic-card__fraction"><span>16</span>/16</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">100%</span>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 7/7</span>
+          <span class="diff-chip diff-chip--medium">Med 8/7</span>
+          <span class="diff-chip diff-chip--hard">Hard 1/1</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-3">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🕸️</div>
+          <div>
+            <div class="topic-card__name">Graphs</div>
+            <div class="topic-card__fraction"><span>5</span>/26</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">19%</span>
+            <span class="badge badge--in-progress">Active</span>
+          </div>
+          <div data-bar-pct="19" class="progress-bar progress-bar--accent"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 1/1</span>
+          <span class="diff-chip diff-chip--medium">Med 4/25</span>
+        </div>
+      </div>
+
+      <div class="topic-card not-started reveal stagger-4">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">⚡</div>
+          <div>
+            <div class="topic-card__name">Dynamic Programming</div>
+            <div class="topic-card__fraction"><span>0</span>/21</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">0%</span>
+            <span class="badge badge--not-started">Planned</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--medium">Med · Hard</span>
+        </div>
+      </div>
+
+      <div class="topic-card not-started reveal stagger-5">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🎯</div>
+          <div>
+            <div class="topic-card__name">Greedy</div>
+            <div class="topic-card__fraction"><span>0</span>/6</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">0%</span>
+            <span class="badge badge--not-started">Planned</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy</span>
+          <span class="diff-chip diff-chip--medium">Med</span>
+          <span class="diff-chip diff-chip--hard">Hard</span>
+        </div>
+      </div>
+
+      <div class="topic-card in-progress reveal stagger-6">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🏔️</div>
+          <div>
+            <div class="topic-card__name">Heaps</div>
+            <div class="topic-card__fraction"><span>4</span>/6</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">67%</span>
+            <span class="badge badge--in-progress">In Progress</span>
+          </div>
+          <div data-bar-pct="67" class="progress-bar progress-bar--blue"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--medium">Med 3/5</span>
+          <span class="diff-chip diff-chip--hard">Hard 1/1</span>
+        </div>
+      </div>
+
+      <div class="topic-card complete reveal stagger-7">
+        <div class="topic-card__header">
+          <div class="topic-card__icon">🔤</div>
+          <div>
+            <div class="topic-card__name">Tries</div>
+            <div class="topic-card__fraction"><span>5</span>/5</div>
+          </div>
+        </div>
+        <div class="topic-card__bar-row">
+          <div class="topic-card__pct-label">
+            <span class="topic-card__pct">100%</span>
+            <span class="badge badge--complete">Complete ✓</span>
+          </div>
+          <div data-bar-pct="100" class="progress-bar progress-bar--success"><div class="progress-bar__fill" style="width:0%"></div></div>
+        </div>
+        <div class="topic-card__difficulty">
+          <span class="diff-chip diff-chip--easy">Easy 1/1</span>
+          <span class="diff-chip diff-chip--medium">Med 4/4</span>
+        </div>
+      </div>
+
+    </div><!-- /.grid-auto -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     ROADMAP
+══════════════════════════════════════════ -->
+<section id="roadmap" aria-labelledby="roadmap-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Roadmap</div>
+      <h2 class="section-title" id="roadmap-heading">Learning Roadmap</h2>
+      <p class="section-subtitle">A structured, opinionated path from foundations to interview-ready mastery. Click any step to expand.</p>
+    </div>
+    <div id="roadmap-container" class="roadmap-container" aria-label="DSA Learning Roadmap">
+      <!-- Rendered by roadmap.js -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SEARCH
+══════════════════════════════════════════ -->
+<section id="search" class="section--alt" aria-labelledby="search-heading">
+  <div class="container">
+    <div class="section-header" style="text-align:center">
+      <div class="section-eyebrow" style="justify-content:center;margin-inline:auto">Search</div>
+      <h2 class="section-title" id="search-heading">Find Any Problem</h2>
+      <p class="section-subtitle" style="margin-inline:auto">Search by topic, problem name, difficulty, company, or status. Results update instantly.</p>
+    </div>
+
+    <div class="search-wrap reveal">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="search-input" class="search-input"
+             placeholder="Search 'Kadane', 'hard', 'Amazon', 'graph'…"
+             aria-label="Search problems"
+             autocomplete="off" spellcheck="false" />
+      <button id="search-clear" class="search-clear" aria-label="Clear search" title="Clear">✕</button>
+    </div>
+
+    <div class="search-filters reveal">
+      <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+      <button class="filter-btn" data-filter="easy" id="filter-easy">Easy</button>
+      <button class="filter-btn" data-filter="medium" id="filter-medium">Medium</button>
+      <button class="filter-btn" data-filter="hard" id="filter-hard">Hard</button>
+      <button class="filter-btn" data-filter="complete" id="filter-complete">Complete</button>
+      <button class="filter-btn" data-filter="in-progress" id="filter-in-progress">In Progress</button>
+      <button class="filter-btn" data-filter="not-started" id="filter-planned">Planned</button>
+    </div>
+
+    <div id="search-results" class="search-results" role="list" aria-live="polite" aria-label="Search results">
+      <!-- Rendered by search.js -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     COMPANY SECTION
+══════════════════════════════════════════ -->
+<section id="companies" aria-labelledby="companies-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Industry</div>
+      <h2 class="section-title" id="companies-heading">Company Coverage</h2>
+      <p class="section-subtitle">Problems tagged with companies frequently asking them in technical interviews.</p>
+    </div>
+
+    <div class="company-grid reveal">
+      <div class="company-card stagger-1"><div class="company-card__emoji">🔵</div><div class="company-card__name">Google</div><div class="company-card__tag">FAANG</div></div>
+      <div class="company-card stagger-2"><div class="company-card__emoji">🟠</div><div class="company-card__name">Amazon</div><div class="company-card__tag">FAANG</div></div>
+      <div class="company-card stagger-3"><div class="company-card__emoji">🔷</div><div class="company-card__name">Microsoft</div><div class="company-card__tag">Big Tech</div></div>
+      <div class="company-card stagger-4"><div class="company-card__emoji">🔵</div><div class="company-card__name">Meta</div><div class="company-card__tag">FAANG</div></div>
+      <div class="company-card stagger-5"><div class="company-card__emoji">🔴</div><div class="company-card__name">Adobe</div><div class="company-card__tag">MNC</div></div>
+      <div class="company-card stagger-6"><div class="company-card__emoji">⚫</div><div class="company-card__name">Uber</div><div class="company-card__tag">Unicorn</div></div>
+      <div class="company-card stagger-1"><div class="company-card__emoji">🔴</div><div class="company-card__name">Oracle</div><div class="company-card__tag">Enterprise</div></div>
+      <div class="company-card stagger-2"><div class="company-card__emoji">🔵</div><div class="company-card__name">Salesforce</div><div class="company-card__tag">SaaS</div></div>
+      <div class="company-card stagger-3"><div class="company-card__emoji">🔵</div><div class="company-card__name">Goldman Sachs</div><div class="company-card__tag">Finance</div></div>
+      <div class="company-card stagger-4"><div class="company-card__emoji">🟤</div><div class="company-card__name">Morgan Stanley</div><div class="company-card__tag">Finance</div></div>
+      <div class="company-card stagger-5"><div class="company-card__emoji">🟢</div><div class="company-card__name">Flipkart</div><div class="company-card__tag">E-Commerce</div></div>
+      <div class="company-card stagger-6"><div class="company-card__emoji">🟡</div><div class="company-card__name">DE Shaw</div><div class="company-card__tag">Quant</div></div>
+      <div class="company-card stagger-1"><div class="company-card__emoji">🟠</div><div class="company-card__name">Swiggy</div><div class="company-card__tag">Startup</div></div>
+      <div class="company-card stagger-2"><div class="company-card__emoji">🟡</div><div class="company-card__name">Ola</div><div class="company-card__tag">Startup</div></div>
+      <div class="company-card stagger-3"><div class="company-card__emoji">🔵</div><div class="company-card__name">PayTM</div><div class="company-card__tag">FinTech</div></div>
+      <div class="company-card stagger-4"><div class="company-card__emoji">🟣</div><div class="company-card__name">Apple</div><div class="company-card__tag">FAANG</div></div>
+      <div class="company-card stagger-5"><div class="company-card__emoji">🔵</div><div class="company-card__name">Facebook</div><div class="company-card__tag">FAANG</div></div>
+      <div class="company-card stagger-6"><div class="company-card__emoji">🟢</div><div class="company-card__name">Zepto</div><div class="company-card__tag">Startup</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     LEARNING PATH
+══════════════════════════════════════════ -->
+<section id="learning-path" class="section--alt" aria-labelledby="path-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Learning Path</div>
+      <h2 class="section-title" id="path-heading">Structured Learning</h2>
+      <p class="section-subtitle">Four progressive stages designed to take you from zero to interview-ready.</p>
+    </div>
+
+    <div class="learning-path reveal">
+      <div class="learning-stage done">
+        <div class="learning-stage__icon">🌱</div>
+        <div class="learning-stage__label">Stage 01</div>
+        <div class="learning-stage__title">Beginner</div>
+        <div class="learning-stage__topics">
+          <div class="learning-stage__topic">Arrays (Easy)</div>
+          <div class="learning-stage__topic">Strings (Easy)</div>
+          <div class="learning-stage__topic">Linked Lists (Easy)</div>
+          <div class="learning-stage__topic">Recursion Basics</div>
+        </div>
+        <span class="learning-stage__hours">~40 hours</span>
+        <span class="badge badge--complete">Done ✓</span>
+      </div>
+      <div class="learning-stage done">
+        <div class="learning-stage__icon">⚙️</div>
+        <div class="learning-stage__label">Stage 02</div>
+        <div class="learning-stage__title">Intermediate</div>
+        <div class="learning-stage__topics">
+          <div class="learning-stage__topic">Binary Search</div>
+          <div class="learning-stage__topic">Trees & BST</div>
+          <div class="learning-stage__topic">Stacks & Queues</div>
+          <div class="learning-stage__topic">Backtracking</div>
+        </div>
+        <span class="learning-stage__hours">~80 hours</span>
+        <span class="badge badge--complete">Done ✓</span>
+      </div>
+      <div class="learning-stage current">
+        <div class="learning-stage__icon">🚀</div>
+        <div class="learning-stage__label">Stage 03</div>
+        <div class="learning-stage__title">Advanced</div>
+        <div class="learning-stage__topics">
+          <div class="learning-stage__topic">Graphs ← Active</div>
+          <div class="learning-stage__topic">Dynamic Programming</div>
+          <div class="learning-stage__topic">Greedy Algorithms</div>
+          <div class="learning-stage__topic">Heaps & Tries</div>
+        </div>
+        <span class="learning-stage__hours">~100 hours</span>
+        <span class="badge badge--in-progress">In Progress</span>
+      </div>
+      <div class="learning-stage">
+        <div class="learning-stage__icon">🎯</div>
+        <div class="learning-stage__label">Stage 04</div>
+        <div class="learning-stage__title">Interview Ready</div>
+        <div class="learning-stage__topics">
+          <div class="learning-stage__topic">Mixed Patterns</div>
+          <div class="learning-stage__topic">Mock Interviews</div>
+          <div class="learning-stage__topic">Company-Specific</div>
+          <div class="learning-stage__topic">System Design</div>
+        </div>
+        <span class="learning-stage__hours">~60 hours</span>
+        <span class="badge badge--not-started">Upcoming</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FEATURED TOPICS
+══════════════════════════════════════════ -->
+<section id="featured" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Highlights</div>
+      <h2 class="section-title" id="featured-heading">Featured Topics</h2>
+      <p class="section-subtitle">The most impactful topics for cracking top-tier interviews — mastered with production-quality solutions.</p>
+    </div>
+
+    <div class="grid-auto-sm">
+      <div class="featured-card reveal stagger-1" data-pct="80">
+        <div class="featured-card__icon">🔢</div>
+        <div class="featured-card__name">Arrays</div>
+        <div class="featured-card__desc">Two-pointer, sliding window, prefix sum, Kadane's, merge intervals — the backbone of every interview.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">20/25 solved</span>
+          <span class="badge badge--in-progress">In Progress</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-2" data-pct="100">
+        <div class="featured-card__icon">🔍</div>
+        <div class="featured-card__name">Binary Search</div>
+        <div class="featured-card__desc">Classic search, rotated arrays, binary search on answer — every variant covered including hard problems.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">7/7 solved</span>
+          <span class="badge badge--complete">Complete ✓</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-3" data-pct="75">
+        <div class="featured-card__icon">🌳</div>
+        <div class="featured-card__name">Binary Trees</div>
+        <div class="featured-card__desc">All traversals, diameter, max path sum, LCA, construction from traversals — 18 solutions and counting.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">18/24 solved</span>
+          <span class="badge badge--in-progress">In Progress</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-4" data-pct="100">
+        <div class="featured-card__icon">🔄</div>
+        <div class="featured-card__name">Recursion & BT</div>
+        <div class="featured-card__desc">N-Queens, Sudoku Solver, Rat in a Maze, Palindrome Partitioning — complete backtracking mastery.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">11/11 solved</span>
+          <span class="badge badge--complete">Complete ✓</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-5" data-pct="100">
+        <div class="featured-card__icon">📚</div>
+        <div class="featured-card__name">Stacks & Queues</div>
+        <div class="featured-card__desc">Monotonic stack, min stack, largest rectangle, rotten oranges, stock span — all 16 problems done.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">16/16 solved</span>
+          <span class="badge badge--complete">Complete ✓</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-6" data-pct="93">
+        <div class="featured-card__icon">🌲</div>
+        <div class="featured-card__name">BST</div>
+        <div class="featured-card__desc">Validation, Kth smallest, LCA, serialize/deserialize, merge 2 BSTs — comprehensive BST problem set.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">14/15 solved</span>
+          <span class="badge badge--in-progress">In Progress</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-1" data-pct="19">
+        <div class="featured-card__icon">🕸️</div>
+        <div class="featured-card__name">Graphs</div>
+        <div class="featured-card__desc">BFS/DFS, cycle detection, Union-Find — actively building the graph section with 26 problems ahead.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">5/26 solved</span>
+          <span class="badge badge--in-progress">Active</span>
+        </div>
+      </div>
+      <div class="featured-card reveal stagger-2" data-pct="100">
+        <div class="featured-card__icon">🔤</div>
+        <div class="featured-card__name">Tries</div>
+        <div class="featured-card__desc">Trie implementation, word break, phone directory design, prefix matching — 5/5 complete.</div>
+        <div class="featured-card__footer">
+          <span class="featured-card__count">5/5 solved</span>
+          <span class="badge badge--complete">Complete ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     RESOURCES
+══════════════════════════════════════════ -->
+<section id="resources" class="section--alt" aria-labelledby="resources-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Resources</div>
+      <h2 class="section-title" id="resources-heading">Learning Resources</h2>
+      <p class="section-subtitle">Platforms and references used alongside this repository for a complete DSA education.</p>
+    </div>
+
+    <div class="grid-auto reveal">
+      <a href="https://www.youtube.com/@ApnaCollegeOfficial" target="_blank" rel="noopener" class="resource-card stagger-1">
+        <div class="resource-card__icon">🎓</div>
+        <div class="resource-card__title">Apna College</div>
+        <div class="resource-card__desc">The primary DSA series by Shradha Ma'am that this repository is aligned with. Exceptional teaching quality.</div>
+        <div class="resource-card__link">apna college →</div>
+      </a>
+      <a href="https://leetcode.com" target="_blank" rel="noopener" class="resource-card stagger-2">
+        <div class="resource-card__icon">⚡</div>
+        <div class="resource-card__title">LeetCode</div>
+        <div class="resource-card__desc">Primary practice platform. All problems in this repo are verified against LeetCode test cases and accepted.</div>
+        <div class="resource-card__link">leetcode.com →</div>
+      </a>
+      <a href="https://www.geeksforgeeks.org" target="_blank" rel="noopener" class="resource-card stagger-3">
+        <div class="resource-card__icon">📖</div>
+        <div class="resource-card__title">GeeksForGeeks</div>
+        <div class="resource-card__desc">Deep conceptual explanations, time complexity analysis, and alternative approaches for every DSA topic.</div>
+        <div class="resource-card__link">geeksforgeeks.org →</div>
+      </a>
+      <a href="https://www.codechef.com" target="_blank" rel="noopener" class="resource-card stagger-4">
+        <div class="resource-card__icon">🍳</div>
+        <div class="resource-card__title">CodeChef</div>
+        <div class="resource-card__desc">Competitive programming practice and monthly challenges to sharpen speed and algorithmic thinking.</div>
+        <div class="resource-card__link">codechef.com →</div>
+      </a>
+      <a href="https://github.com/indiser/DSA-Placement-Prep" target="_blank" rel="noopener" class="resource-card stagger-5">
+        <div class="resource-card__icon">📁</div>
+        <div class="resource-card__title">This Repository</div>
+        <div class="resource-card__desc">Star the repo, fork it, and use the CSV tracker to follow along with your own progress on the same problem set.</div>
+        <div class="resource-card__link">github.com/indiser →</div>
+      </a>
+      <a href="https://cppreference.com" target="_blank" rel="noopener" class="resource-card stagger-6">
+        <div class="resource-card__icon">📚</div>
+        <div class="resource-card__title">cppreference.com</div>
+        <div class="resource-card__desc">The definitive C++ STL reference. Essential for understanding vector, map, set, priority_queue internals.</div>
+        <div class="resource-card__link">cppreference.com →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     REPOSITORY STRUCTURE
+══════════════════════════════════════════ -->
+<section id="structure" aria-labelledby="structure-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Repository</div>
+      <h2 class="section-title" id="structure-heading">Repository Structure</h2>
+      <p class="section-subtitle">Every solution is organized by topic and difficulty — easy to navigate, easy to contribute to.</p>
+    </div>
+
+    <div class="file-tree reveal" role="tree" aria-label="Repository file tree">
+      <div class="file-tree__header">
+        <div class="file-tree__dots" aria-hidden="true">
+          <div class="file-tree__dot file-tree__dot--red"></div>
+          <div class="file-tree__dot file-tree__dot--yellow"></div>
+          <div class="file-tree__dot file-tree__dot--green"></div>
+        </div>
+        <div class="file-tree__title">~/DSA-Placement-Prep</div>
+      </div>
+      <div class="file-tree__body">
+
+        <div class="tree-item dir" role="treeitem" aria-expanded="false" tabindex="0">
+          <span class="icon dir-icon">📁</span>
+          <span class="name">Arrays/</span>
+          <span class="count">20 files</span>
+        </div>
+        <div class="tree-children">
+          <div class="tree-item dir" role="treeitem">
+            <span class="icon dir-icon">📂</span><span class="name">Easy/</span><span class="count">5 files</span>
+          </div>
+          <div class="tree-children open" style="display:block">
+            <div class="tree-item"><span class="icon">📄</span><span class="name">BuyAndSellStock.cpp</span></div>
+            <div class="tree-item"><span class="icon">📄</span><span class="name">MajorityElements.cpp</span></div>
+            <div class="tree-item"><span class="icon">📄</span><span class="name">MergeSortedArray.cpp</span></div>
+            <div class="tree-item"><span class="icon">📄</span><span class="name">SingleNumber.cpp</span></div>
+            <div class="tree-item"><span class="icon">📄</span><span class="name">FindMissingAndRepeated.cpp</span></div>
+          </div>
+          <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Medium/</span><span class="count">11 files</span></div>
+          <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Hard/</span><span class="count">4 files</span></div>
+        </div>
+
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Binary Search/</span><span class="count">7 files</span></div>
+        <div class="tree-children">
+          <div class="tree-item dir"><span class="icon dir-icon">📁</span><span class="name">Medium/</span><span class="count">6 files</span></div>
+          <div class="tree-item dir"><span class="icon dir-icon">📁</span><span class="name">Hard/</span><span class="count">1 file</span></div>
+        </div>
+
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Stings/ (Strings)</span><span class="count">7 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Linked List/</span><span class="count">12 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Recursion_And_Backtracing/</span><span class="count">11 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Binary Trees/</span><span class="count">18 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Binary Search Tree/</span><span class="count">14 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Stack_And_Queue/</span><span class="count">16 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Graph/</span><span class="count">5 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">DP/</span><span class="count">0 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Greedy/</span><span class="count">0 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Heap/</span><span class="count">4 files</span></div>
+        <div class="tree-item dir" role="treeitem"><span class="icon dir-icon">📁</span><span class="name">Trie/</span><span class="count">5 files</span></div>
+
+        <div style="border-top:1px solid var(--color-border);margin:var(--space-2) 0"></div>
+        <div class="tree-item"><span class="icon">📊</span><span class="name">DSA for PLACEMENTS.csv</span></div>
+        <div class="tree-item"><span class="icon">📗</span><span class="name">DSA for PLACEMENTS.xlsx</span></div>
+        <div class="tree-item"><span class="icon">📄</span><span class="name">Readme.md</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-8)">
+      <a href="https://github.com/indiser/DSA-Placement-Prep"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn--primary btn--lg">
+        Browse on GitHub
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CONTRIBUTION
+══════════════════════════════════════════ -->
+<section id="contribution" class="section--alt" aria-labelledby="contrib-heading">
+  <div class="container">
+    <div class="section-header" style="text-align:center">
+      <div class="section-eyebrow" style="justify-content:center;margin-inline:auto">Open Source</div>
+      <h2 class="section-title" id="contrib-heading">Contribute</h2>
+      <p class="section-subtitle" style="margin-inline:auto">This is an active learning project. Improve solutions, add missing problems, or fix documentation.</p>
+    </div>
+
+    <div class="contribution-steps reveal">
+      <div class="contrib-step stagger-1">
+        <div class="contrib-step__num">01</div>
+        <div class="contrib-step__title">Fork</div>
+        <div class="contrib-step__desc">Fork the repository to your account</div>
+        <code class="contrib-step__cmd">gh repo fork indiser/DSA-Placement-Prep</code>
+      </div>
+      <div class="contrib-step stagger-2">
+        <div class="contrib-step__num">02</div>
+        <div class="contrib-step__title">Clone</div>
+        <div class="contrib-step__desc">Clone locally and create a branch</div>
+        <code class="contrib-step__cmd">git checkout -b feat/my-solution</code>
+      </div>
+      <div class="contrib-step stagger-3">
+        <div class="contrib-step__num">03</div>
+        <div class="contrib-step__title">Commit</div>
+        <div class="contrib-step__desc">Write your solution with comments</div>
+        <code class="contrib-step__cmd">git commit -m "add: problem name"</code>
+      </div>
+      <div class="contrib-step stagger-4">
+        <div class="contrib-step__num">04</div>
+        <div class="contrib-step__title">Pull Request</div>
+        <div class="contrib-step__desc">Open a PR with description</div>
+        <code class="contrib-step__cmd">gh pr create --fill</code>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-10)">
+      <a href="https://github.com/indiser/DSA-Placement-Prep/fork"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn--accent btn--lg">
+        Fork on GitHub
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">DSA Placement Prep</div>
+        <div class="footer__brand-desc">Production-quality C++ DSA solutions. 119 problems solved across 13 topics. Built to crack top-tier technical interviews.</div>
+        <div style="display:flex;gap:var(--space-3)">
+          <a href="https://github.com/indiser/DSA-Placement-Prep" target="_blank" rel="noopener" class="btn btn--sm" style="background:rgba(255,255,255,0.1);color:var(--color-card);border-color:rgba(255,255,255,0.2)">
+            ★ Star on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <div class="footer__links">
+          <a href="#home"       class="footer__link">Home</a>
+          <a href="#progress"   class="footer__link">Progress Dashboard</a>
+          <a href="#topics"     class="footer__link">Topic Explorer</a>
+          <a href="#roadmap"    class="footer__link">Roadmap</a>
+          <a href="#search"     class="footer__link">Search Problems</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">More</div>
+        <div class="footer__links">
+          <a href="#companies"     class="footer__link">Company Coverage</a>
+          <a href="#learning-path" class="footer__link">Learning Path</a>
+          <a href="#resources"     class="footer__link">Resources</a>
+          <a href="#structure"     class="footer__link">Repo Structure</a>
+          <a href="#contribution"  class="footer__link">Contribute</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Repository</div>
+        <div class="footer__links">
+          <a href="https://github.com/indiser/DSA-Placement-Prep" target="_blank" rel="noopener" class="footer__link">GitHub →</a>
+          <a href="https://github.com/indiser/DSA-Placement-Prep/issues" target="_blank" rel="noopener" class="footer__link">Issues →</a>
+          <a href="https://github.com/indiser/DSA-Placement-Prep/fork" target="_blank" rel="noopener" class="footer__link">Fork →</a>
+          <a href="https://github.com/indiser/DSA-Placement-Prep/stargazers" target="_blank" rel="noopener" class="footer__link">Stars →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2026 · DSA Placement Prep · Educational purposes · C++17
+      </div>
+      <a href="#home" class="footer__back-top" data-back-top aria-label="Back to top">
+        ↑ Back to top
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Modules -->
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

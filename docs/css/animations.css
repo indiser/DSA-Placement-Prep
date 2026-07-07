@@ -1,0 +1,245 @@
+/* ============================================================
+   animations.css — Keyframes & Motion
+   ============================================================ */
+
+/* ── Keyframes ── */
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-12px) rotate(2deg); }
+  66%       { transform: translateY(-6px) rotate(-1deg); }
+}
+
+@keyframes heroPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.9); }
+}
+
+@keyframes progressRingFill {
+  from { stroke-dashoffset: 263.89; }
+}
+
+@keyframes counterUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes borderPulse {
+  0%, 100% { border-color: var(--color-border); }
+  50%       { border-color: var(--color-accent); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes progressBarGrow {
+  from { width: 0%; }
+}
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* ── Scroll-reveal base ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-slower) var(--ease-out),
+              transform var(--dur-slower) var(--ease-out);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity var(--dur-slower) var(--ease-out),
+              transform var(--dur-slower) var(--ease-out);
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity var(--dur-slower) var(--ease-out),
+              transform var(--dur-slower) var(--ease-out);
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Stagger delays ── */
+.stagger-1  { transition-delay: 0.05s; }
+.stagger-2  { transition-delay: 0.1s;  }
+.stagger-3  { transition-delay: 0.15s; }
+.stagger-4  { transition-delay: 0.2s;  }
+.stagger-5  { transition-delay: 0.25s; }
+.stagger-6  { transition-delay: 0.3s;  }
+.stagger-7  { transition-delay: 0.35s; }
+.stagger-8  { transition-delay: 0.4s;  }
+
+/* ── Hover Lift ── */
+.hover-lift {
+  transition: transform var(--dur-fast) var(--ease-spring),
+              box-shadow var(--dur-fast) var(--ease);
+}
+
+.hover-lift:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow);
+}
+
+/* ── Shimmer Loading Placeholder ── */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-card) 0%,
+    var(--color-card-alt) 50%,
+    var(--color-card) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* ── Progress Ring SVG Animation ── */
+.progress-ring__fill {
+  stroke-dasharray: 263.89;
+  transition: stroke-dashoffset 1.2s var(--ease-out);
+}
+
+.progress-ring__fill.animate {
+  animation: progressRingFill 0.01s both; /* start at full then JS sets final value */
+}
+
+/* ── Status dot blink (active) ── */
+.status-dot--active {
+  animation: dotBlink 1.8s ease-in-out infinite;
+}
+
+/* ── Card press effect ── */
+.card-pressable {
+  transition: transform var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease);
+}
+
+.card-pressable:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow);
+}
+
+.card-pressable:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+/* ── Button press ── */
+.btn-pressable {
+  transition: transform var(--dur-fast) var(--ease-spring),
+              box-shadow var(--dur-fast) var(--ease);
+}
+
+.btn-pressable:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-pressable:active {
+  transform: translate(0, 0) scale(0.98);
+  box-shadow: none;
+}
+
+/* ── Smooth reveal for roadmap steps ── */
+.roadmap-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--dur-slow) var(--ease-out),
+              opacity var(--dur-slow) var(--ease-out),
+              padding var(--dur-slow) var(--ease);
+  opacity: 0;
+  padding-top: 0;
+}
+
+.roadmap-detail.open {
+  max-height: 600px;
+  opacity: 1;
+  padding-top: var(--space-4);
+}
+
+/* ── Progress bar fill animation ── */
+.progress-bar__fill {
+  width: 0%;
+  transition: width 1.2s var(--ease-out);
+}
+
+.progress-bar__fill.animate {
+  width: var(--bar-width);
+}
+
+/* ── Typing cursor blink ── */
+.cursor-blink::after {
+  content: '|';
+  animation: dotBlink 1s step-end infinite;
+  color: var(--color-accent);
+  font-weight: 300;
+}
+
+/* ── Respect user motion preferences ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}

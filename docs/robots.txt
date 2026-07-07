@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indiser.github.io/DSA-Placement-Prep/sitemap.xml
