@@ -174,7 +174,7 @@ GRAPH,TRUE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/descr
 ,TRUE,11,Floyd Warshall Algo,https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/,Medium,,"flipkart, microsoft ",
 ,TRUE,12,Kosaraju Strongly Connected Components,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/,Medium,,"Amazon, Meta , Stripe, Airbnb , Oracle, DE Shaw, Apple ",
 ,TRUE,13,Check Bi-partite Graph,https://leetcode.com/problems/is-graph-bipartite/description/,Medium,,"  Amazon , Adobe,  Directi,Uber,DE shaw, Microsoft ",
-,FALSE,14,Number of Islands,https://leetcode.com/problems/number-of-islands/description/,Medium,," Amazon , Adobe,  Directi,Uber,DE shaw, Microsoft ",
+,TRUE,14,Number of Islands,https://leetcode.com/problems/number-of-islands/description/,Medium,," Amazon , Adobe,  Directi,Uber,DE shaw, Microsoft ",
 ,FALSE,15,Rotten Oranges,https://leetcode.com/problems/rotting-oranges/description/,Medium,,"Sharechat  + Directi , Amazon , microsoft ",
 ,FALSE,16,01 Matrix,https://leetcode.com/problems/01-matrix/description/,Medium,,"Google , uber, Meta, microsoft, Amazon ",
 ,FALSE,17,Course Schedule I & II,https://leetcode.com/problems/course-schedule-ii/description/,Medium,,"Amazon, Google, Zoho, Oracle, Samsung, Meta , intuit  , zepto, phonepe , fliipkart, citadel , salesforce",
