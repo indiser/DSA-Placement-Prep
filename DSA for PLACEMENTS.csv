@@ -183,7 +183,7 @@ GRAPH,TRUE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/descr
 ,TRUE,20,Clone a Graph,https://leetcode.com/problems/clone-graph/description/,Medium,,"Amazon , Microoft , Meta , Linkedin , Oracle , Apple , Adobe,Nvidia, Paypal , Goldman Sachs, Salesforce",
 ,TRUE,21,Most Stones Removed,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/,Medium,,Microsoft Flipkart Pinterest Meta Uber Samung ,
 ,TRUE,22,Number of Provinces,https://leetcode.com/problems/number-of-provinces/,Medium,,Paytm,
-,FALSE,23,Number of Ways to Arrive at Destination,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/,Medium,,"Phonepe ,  Google, Apple, Microsoft, Amazon ",
+,TRUE,23,Number of Ways to Arrive at Destination,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/,Medium,,"Phonepe ,  Google, Apple, Microsoft, Amazon ",
 ,FALSE,24,Topoplogical Sorting (BFS),https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/?envType=problem-list-v2&envId=topological-sort,Hard,,"Sprinklr, Google, Amazon, Meta ",
 ,FALSE,25,Dijkstra's Algorithm,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/,Hard,,"Google, Amazon , Meta ",
 ,FALSE,26,Kruskal's Algorithm (MST),https://leetcode.com/problems/min-cost-to-connect-all-points/description/,Hard,,"Airbnb , Citadel, Uber, Google, Meta , Airbnb",
