@@ -186,7 +186,7 @@ GRAPH,TRUE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/descr
 ,TRUE,23,Number of Ways to Arrive at Destination,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/,Medium,,"Phonepe ,  Google, Apple, Microsoft, Amazon ",
 ,FALSE,24,Topoplogical Sorting (BFS),https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/?envType=problem-list-v2&envId=topological-sort,Hard,,"Sprinklr, Google, Amazon, Meta ",
 ,TRUE,25,Dijkstra's Algorithm,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/,Hard,,"Google, Amazon , Meta ",
-,FALSE,26,Kruskal's Algorithm (MST),https://leetcode.com/problems/min-cost-to-connect-all-points/description/,Hard,,"Airbnb , Citadel, Uber, Google, Meta , Airbnb",
+,TRUE,26,Kruskal's Algorithm (MST),https://leetcode.com/problems/min-cost-to-connect-all-points/description/,Hard,,"Airbnb , Citadel, Uber, Google, Meta , Airbnb",
 ,,,,,,,,
 ,,,,,,,,
 DP,FALSE,1,Buy & Sell Stocks I,Problem Link,Easy,,Amazon D-E-Shaw Directi Flipkart Goldman Sachs Intuit MakeMyTrip Microsoft Ola Cabs Oracle Paytm Pubmatic Quikr Salesforce Sapient Swiggy Walmart Media.net Google,
