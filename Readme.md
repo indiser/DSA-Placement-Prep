@@ -16,11 +16,11 @@ A comprehensive collection of Data Structures and Algorithms solutions curated f
 | Binary Trees | ✅ In Progress | 18/24 problems |
 | BST | ✅ In Progress | 14/15 problems |
 | Stacks & Queues | ✅ Complete | 16/16 problems |
-| Graphs | ✅ In Progress | 5/26 problems |
+| Graphs | ✅ Complete | 26/26 problems |
 | Dynamic Programming | 🔄 Not Started | 0/21 problems |
 | Greedy | 🔄 Not Started | 0/6 problems |
 | Heaps | ✅ In Progress | 4/6 problems |
-| Tries | ✅ In Progress | 5/5 problems |
+| Tries | ✅ Complete | 5/5 problems |
 
 **Overall Progress:** 119/185 problems (64%)
 
