@@ -1,0 +1,65 @@
+Topic,Mark as Done,S.No.,Question,Link,Difficulty,Video SOLUTION,Companies
+1D DP,FALSE,1,Fibonacci,https://leetcode.com/problems/fibonacci-number/,Easy,https://www.youtube.com/watch?v=uBA8DkCBdco,"Microsoft, Amazon, Nvidia"
+,FALSE,2,Climbing Stairs,https://leetcode.com/problems/climbing-stairs/,Easy,https://youtu.be/3GzA0mz6wp0?si=07kN_nH5uGcg1Gts,"Apple, Meta, Nvidia"
+,FALSE,3,House Robber,https://leetcode.com/problems/house-robber/,Medium,https://youtu.be/BRmLlJA6ncI?si=MUe20YdL-kTLlkaA,"Cisco, Expedia, Infosys"
+,FALSE,4,Frog Jump,https://www.geeksforgeeks.org/problems/geek-jump/1,Medium,https://youtu.be/AKqlgskrZwI?si=5bnO8lEM5rjJ3MGI,"Microsoft, Bloomberg, Oracle"
+,FALSE,5,Min Cost Climbing Stairs,https://leetcode.com/problems/min-cost-climbing-stairs/description/,Easy,https://youtu.be/KwItlcfF9vE?si=-N0C9WDICMjiiaDf,"Google, Microsoft, Meta"
+,FALSE,6,House Robber II,https://leetcode.com/problems/house-robber-ii/description/,Medium,https://youtu.be/hSMJj9AdNBo?si=kdPu5wOvqdt-SywA,"Uber, Visa, DE Shaw"
+,,,,,,,
+,,,,,,,
+KNAPSACK,FALSE,1,0-1 Knapsack Problem,https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1,Medium,,"Visa, GreyOrange, Payu"
+,FALSE,2,Rod Cutting DP,https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/,Hard,,"Microsoft, Amazon, Bloomberg"
+,FALSE,3,Unbounded Knapsack Problem,https://www.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1,Medium,,"Amazon, Google"
+,FALSE,4,Subset Sum Equals K,https://leetcode.com/problems/subarray-sum-equals-k/,Medium,,"Walmart, Goldman Sachs, Oracle"
+,FALSE,5,Coin Change Problem,https://leetcode.com/problems/coin-change/description/,Medium,,"Adobe, Apple, PayPal"
+,FALSE,6,Partition Equal Subset Sums,https://leetcode.com/problems/partition-equal-subset-sum/description/,Medium,,"Zoho, Meta, Salesforce"
+,FALSE,7,Last Stones Weight II,https://leetcode.com/problems/last-stone-weight-ii/description/,Medium,,"Google, Bloomberg, Microsoft"
+,,,,,,,
+,,,,,,,
+LCS,FALSE,1,Longest Common Subsequnce (LCS),https://leetcode.com/problems/longest-common-subsequence/,Medium,,"Apple, Walmart, Cisco"
+,FALSE,2,Box Stacking,https://www.geeksforgeeks.org/problems/box-stacking/1,Medium,,"Amazon, Microsoft"
+,FALSE,3,Shortest Common Supersequence,https://leetcode.com/problems/shortest-common-supersequence/description/,Hard,,"Microsoft, Meta, Amazon"
+,FALSE,4,Longest Increasing Subsequence (LIS),https://leetcode.com/problems/longest-increasing-subsequence/description/,Medium,,"Bloomberg, Infosys, Walmart"
+,FALSE,5,Edit Distances,https://leetcode.com/problems/edit-distance/description/,Medium,,"Linkedin, Walmart, Deloitte"
+,FALSE,6,Longest Bitonic Subsequence (LBS),https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/description/,Hard,,"Amazon, PayPal, Meta"
+,,,,,,,
+,,,,,,,
+CATALAN,FALSE,1,Generate Parentheses,https://leetcode.com/problems/generate-parentheses/description/,Medium,,"Oracle, TCS, Goldman Sachs"
+,FALSE,2,Number of BSTs,https://leetcode.com/problems/unique-binary-search-trees/description/,Medium,,"Meta, Swiggy, Bloomberg"
+,FALSE,3,Catalan Triangle,https://www.geeksforgeeks.org/dsa/minimum-changes-required-to-make-a-catalan-sequence/,Hard,,
+,FALSE,4,Mountain Ranges,https://leetcode.com/problems/longest-mountain-in-array/description/,Medium,,"IBM, Amazon, Microsoft"
+,FALSE,5,Convex Polygons,https://leetcode.com/problems/convex-polygon/description/,Medium,,Google
+,,,,,,,
+,,,,,,,
+GRID DP,FALSE,1,Unique Paths II,https://leetcode.com/problems/unique-paths-ii/description/,Easy,,"Amazon, Bloomberg, Microsoft"
+,FALSE,2,Cherry Pickup II,https://leetcode.com/problems/cherry-pickup-ii/description/,Hard,,"Sprinklr, Microsoft, Rubrik"
+,FALSE,3,Unique Paths,https://leetcode.com/problems/unique-paths/description/,Medium,,"Nvidia, Accenture, Razorpay"
+,FALSE,4,Min Path Sum,https://leetcode.com/problems/minimum-falling-path-sum/description/,Medium,,"Amazon, Goldman Sachs, Bloomberg"
+,FALSE,5,Triangle,https://leetcode.com/problems/triangle/description/,Medium,,"Microsoft, Walmart, Infosys"
+,FALSE,6,Cherry Pickup,https://leetcode.com/problems/cherry-pickup/description/,Hard,,"Amazon, Google, Uber"
+,FALSE,7,Dungeon Game,https://leetcode.com/problems/dungeon-game/description/,Hard,,"Google, Flipkart, Bloomberg"
+,,,,,,,
+,,,,,,,
+MCM,FALSE,1,Matrix Chain Multiplication,https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1,Hard,,"Flipkart, Microsoft"
+,FALSE,2,Strange Printer,https://leetcode.com/problems/strange-printer/description/,Hard,,"Amazon, Microsoft, Meta"
+,FALSE,3,Burst Balloons,https://leetcode.com/problems/burst-balloons/description/,Hard,,"Google, Meta, Amazon"
+,FALSE,4,Min Cost to Cut a Stick,https://leetcode.com/problems/minimum-cost-to-cut-a-stick/,Hard,,"Microsoft, Oracle, Meta"
+,FALSE,5,Longest Palindromic Subsequences,https://leetcode.com/problems/longest-palindromic-subsequence/description/,Medium,,"MAQ Software, Accenture, Uber"
+,FALSE,6,Remove Boxes,https://leetcode.com/problems/remove-boxes/description/,Hard,,"Intuit, Sprinklr, Phone Pe"
+,,,,,,,
+,,,,,,,
+STOCK DP,FALSE,1,Best Time to Buy and Sell Stock II,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/,Medium,,"TCS, Zoho, nike"
+,FALSE,2,Best Time to Buy and Sell Stock with Cooldown,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/,Medium,,"Microsoft, Bloomberg, Amazon"
+,FALSE,3,Best Time to Buy and Sell Stock with Transaction Fee,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/,Medium,,"Google, Apple, Microsoft"
+,FALSE,4,Best Time to Buy and Sell Stock III,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/,Hard,,"Visa, PayPal, Goldman Sachs"
+,FALSE,5,Best Time to Buy and Sell Stock IV,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/,Hard,,"Google, Amazon, Microsoft"
+,,,,,,,
+,,,,,,,
+MISCELLANEOUS,FALSE,1,House Robber III,https://leetcode.com/problems/house-robber-iii/description/,Medium,,"Google, OYO, Sprinklr"
+,FALSE,2,Numbers At Most N Given Digit Set,https://leetcode.com/problems/numbers-at-most-n-given-digit-set/description/,Hard,,"Amazon, Microsoft"
+,FALSE,3,Super Egg Drop,https://leetcode.com/problems/super-egg-drop/description/,Hard,,"Amazon, Bloomberg, Google"
+,FALSE,4,Partition to K Equal Sum Subsets,https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/,Medium,,"Microsoft, Amazon, Linked In"
+,FALSE,5,Matchsticks to Square,https://leetcode.com/problems/matchsticks-to-square/description/,Medium,,"Phone Pe, Meta, Uber"
+,FALSE,6,Word Break,https://leetcode.com/problems/word-break/description/,Medium,,"Uber, netflix, Oracle"
+,FALSE,7,Palindromic Partitioning DP,https://leetcode.com/problems/palindrome-partitioning/description/,Medium,,"Bloomberg, Accenture, Visa"
+,FALSE,8,Maximum Product Subarray,https://leetcode.com/problems/maximum-product-subarray/description/,Medium,,"Swiggy, Nvidia, Siemens"
