@@ -1,6 +1,3 @@
-,,,"Do NOT send any edit request to this sheet. Instead, make a copy of your own.",,,,,
-,,,DSA Series by Shradha Ma'am,,,,Series Link : DSA Series by Shradha Ma'am,
-,,,,,,,,
 ,Mark as Done,,Question,Link,Difficulty,Video SOLUTION,Companies,Pre-requisites
 ,,,,,,,,
 ARRAYS,TRUE,1,Majority Element,Problem Link,Easy,Solution Link,Amazon Google,
@@ -218,3 +215,10 @@ GREEDY,FALSE,1,Assign Cookies,Problem Link,Easy,,"Amazon , Accenture , Uber , Ad
 ,FALSE,4,maximum length of pair chain,Problem Link,Medium,," Amazon , bloomberg, swiggy , adobe , apple ",
 ,FALSE,5,Activity Selection,Problem Link,Medium,,"Meta, amazon , google , microsoft ",
 ,FALSE,6,Job Scheduling,Problem Link,Hard,,"amazon , microsoft , airbnb, adobe,phonepe",
+,,,,,,,,
+,,,,,,,,
+MISCELLANEOUS,FALSE,1,Power Set,Subsets - LeetCode,Medium,,"Google, Adobe, Atlassian, Fiverr, Uber, TCS",
+,FALSE,2,Max XOR of Two Numbers,Maximum XOR of Two Numbers in an Array - LeetCode,Medium,,"Goldman Sches, Google, Adobe, Amazon",
+,FALSE,3,Power Of Two,Power of Two - LeetCode,Easy,,"Adobe, Snapdeal, Google, Apple, TCS",
+,FALSE,4,XOR beauty of Array,Find Xor-Beauty of Array - LeetCode,Medium,,Amazon,
+,FALSE,5,Watering Plants 2,Watering Plants II - LeetCode,Medium,,Google,
