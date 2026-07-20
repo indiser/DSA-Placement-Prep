@@ -1,7 +1,7 @@
 Topic,Mark as Done,S.No.,Question,Link,Difficulty,Video SOLUTION,Companies
 1D DP,TRUE,1,Fibonacci,https://leetcode.com/problems/fibonacci-number/,Easy,https://www.youtube.com/watch?v=uBA8DkCBdco,"Microsoft, Amazon, Nvidia"
-,FALSE,2,Climbing Stairs,https://leetcode.com/problems/climbing-stairs/,Easy,https://youtu.be/3GzA0mz6wp0?si=07kN_nH5uGcg1Gts,"Apple, Meta, Nvidia"
-,FALSE,3,House Robber,https://leetcode.com/problems/house-robber/,Medium,https://youtu.be/BRmLlJA6ncI?si=MUe20YdL-kTLlkaA,"Cisco, Expedia, Infosys"
+,TRUE,2,Climbing Stairs,https://leetcode.com/problems/climbing-stairs/,Easy,https://youtu.be/3GzA0mz6wp0?si=07kN_nH5uGcg1Gts,"Apple, Meta, Nvidia"
+,TRUE,3,House Robber,https://leetcode.com/problems/house-robber/,Medium,https://youtu.be/BRmLlJA6ncI?si=MUe20YdL-kTLlkaA,"Cisco, Expedia, Infosys"
 ,FALSE,4,Frog Jump,https://www.geeksforgeeks.org/problems/geek-jump/1,Medium,https://youtu.be/AKqlgskrZwI?si=5bnO8lEM5rjJ3MGI,"Microsoft, Bloomberg, Oracle"
 ,FALSE,5,Min Cost Climbing Stairs,https://leetcode.com/problems/min-cost-climbing-stairs/description/,Easy,https://youtu.be/KwItlcfF9vE?si=-N0C9WDICMjiiaDf,"Google, Microsoft, Meta"
 ,FALSE,6,House Robber II,https://leetcode.com/problems/house-robber-ii/description/,Medium,https://youtu.be/hSMJj9AdNBo?si=kdPu5wOvqdt-SywA,"Uber, Visa, DE Shaw"
