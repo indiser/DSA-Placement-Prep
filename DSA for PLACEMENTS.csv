@@ -187,7 +187,7 @@ GRAPH,TRUE,1,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill/descr
 ,,,,,,,,
 ,,,,,,,,
 DP,FALSE,1,Buy & Sell Stocks I,Problem Link,Easy,,Amazon D-E-Shaw Directi Flipkart Goldman Sachs Intuit MakeMyTrip Microsoft Ola Cabs Oracle Paytm Pubmatic Quikr Salesforce Sapient Swiggy Walmart Media.net Google,
-,FALSE,2,0-1 Knapsack,Problem Link,Medium,, Amazon Directi Flipkart GreyOrange Microsoft Mobicip Morgan Stanley Oracle Payu Snapdeal Visa,
+,TRUE,2,0-1 Knapsack,Problem Link,Medium,, Amazon Directi Flipkart GreyOrange Microsoft Mobicip Morgan Stanley Oracle Payu Snapdeal Visa,
 ,FALSE,3,Target Sum Subset,Problem Link,Medium,,"Myntra ,Microsoft, Meta , Amazon ",
 ,FALSE,4,Unbounded Knapsack,Problem Link,Medium,,"Amazon , Google ",
 ,FALSE,5,Coin Change,Problem Link,Medium,,"Adobe, Salesforce,  Amazon, Google, Microsoft, Intuit , Infosys,  Accenture ",
