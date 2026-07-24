@@ -22,7 +22,7 @@ A comprehensive collection of Data Structures and Algorithms solutions curated f
 | Heaps | ✅ In Progress | 4/6 problems |
 | Tries | ✅ Complete | 5/5 problems |
 
-**Overall Progress:** 119/185 problems (64%)
+**Overall Progress:** 162/194 problems (83.51%)
 
 ## 📚 Topics Covered (Planned)
 
@@ -292,8 +292,8 @@ For questions or clarifications:
 ---
 
 - **Last Updated:** 2026
-- **Total Problems (Completed):** 119/185 (64%)
-- **Topics (Completed):** 5 | **Topics (In Progress):** 6
+- **Total Problems (Completed):** 162/194 (83.51%)
+- **Topics (Completed):** 10 | **Topics (In Progress):** 1
 - **Difficulty Levels:** Easy, Medium, Hard
 
 **Disclaimer:** This repository is a work in progress and is being continuously updated. Solutions and content may change as the project develops. Use at your own discretion for learning purposes.
