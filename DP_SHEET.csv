@@ -10,7 +10,7 @@ Topic,Mark as Done,S.No.,Question,Link,Difficulty,Video SOLUTION,Companies
 KNAPSACK,TRUE,1,0-1 Knapsack Problem,https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1,Medium,,"Visa, GreyOrange, Payu"
 ,FALSE,2,Rod Cutting DP,https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/,Hard,,"Microsoft, Amazon, Bloomberg"
 ,FALSE,3,Unbounded Knapsack Problem,https://www.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1,Medium,,"Amazon, Google"
-,FALSE,4,Subset Sum Equals K,https://leetcode.com/problems/subarray-sum-equals-k/,Medium,,"Walmart, Goldman Sachs, Oracle"
+,TRUE,4,Subset Sum Equals K,https://leetcode.com/problems/subarray-sum-equals-k/,Medium,,"Walmart, Goldman Sachs, Oracle"
 ,FALSE,5,Coin Change Problem,https://leetcode.com/problems/coin-change/description/,Medium,,"Adobe, Apple, PayPal"
 ,FALSE,6,Partition Equal Subset Sums,https://leetcode.com/problems/partition-equal-subset-sum/description/,Medium,,"Zoho, Meta, Salesforce"
 ,FALSE,7,Last Stones Weight II,https://leetcode.com/problems/last-stone-weight-ii/description/,Medium,,"Google, Bloomberg, Microsoft"
